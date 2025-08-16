@@ -75,25 +75,6 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Stats preview */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 pt-16">
-          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm">
-            <div className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">15+</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Tahun Pengalaman</div>
-          </div>
-          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm">
-            <div className="text-3xl font-bold text-amber-600 dark:text-amber-400">60+</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Kelas Tersedia</div>
-          </div>
-          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm">
-            <div className="text-3xl font-bold text-red-600 dark:text-red-400">900+</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Alumni Sukses</div>
-          </div>
-          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm">
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">10+</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Program Unggulan</div>
-          </div>
-        </div>
       </div>
 
       {/* Scroll indicator */}
