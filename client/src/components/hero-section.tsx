@@ -61,7 +61,7 @@ export function HeroSection() {
           <div className="hero-buttons flex flex-col sm:flex-row gap-6 justify-center" style={{marginLeft: '1rem'}}>
             <button 
               onClick={() => scrollToSection('#programs')}
-              className="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 text-lg font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 text-lg font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-3"
             >
               <Play className="w-5 h-5" />
               Jelajahi Program Kami

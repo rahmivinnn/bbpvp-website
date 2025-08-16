@@ -106,7 +106,7 @@ export function ChatBot() {
       {/* Chat Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group ${
+        className={`fixed bottom-6 right-6 z-50 w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group ${
           isOpen ? 'scale-0' : 'scale-100'
         }`}
         style={{
@@ -121,7 +121,7 @@ export function ChatBot() {
         isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
       }`}>
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-t-2xl">
+        <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 bg-blue-600 text-white rounded-t-2xl">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
               <Bot className="w-5 h-5" />
@@ -146,7 +146,7 @@ export function ChatBot() {
               <div className={`max-w-[80%] p-3 rounded-2xl text-sm ${
                 message.isBot 
                   ? 'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-bl-sm' 
-                  : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-br-sm'
+                  : 'bg-blue-600 text-white rounded-br-sm'
               }`}>
                 <div className="flex items-start gap-2">
                   {message.isBot && (
@@ -215,7 +215,7 @@ export function ChatBot() {
             <button
               onClick={() => handleSendMessage()}
               disabled={!inputText.trim() || isTyping}
-              className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl flex items-center justify-center hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-10 h-10 bg-blue-600 hover:bg-blue-700 text-white rounded-xl flex items-center justify-center hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Send className="w-4 h-4" />
             </button>

@@ -89,12 +89,12 @@
 }
 
 @layer components {
-  .modern-gradient {
-    background: var(--gradient-primary);
+  .modern-solid {
+    background: var(--primary);
   }
 
   .hero-bg {
-    background: linear-gradient(135deg, #fefbf4 0%, #f3f4f6 50%, #e5e7eb 100%);
+    background: #f9fafb;
     position: relative;
   }
 
@@ -112,7 +112,7 @@
   }
 
   .dark .hero-bg {
-    background: linear-gradient(135deg, hsl(222 84% 4.9%) 0%, hsl(217 32% 17%) 100%);
+    background: hsl(222 84% 4.9%);
   }
 
   .text-gradient {

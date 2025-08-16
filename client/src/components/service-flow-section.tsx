@@ -92,7 +92,7 @@ icon: 'PBL',
   ];
 
   return (
-    <section id="service-flow" className="py-24 bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+    <section id="service-flow" className="py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Program Excellence */}
         <div className="text-center mb-20">
@@ -113,9 +113,9 @@ icon: 'PBL',
             {programs.map((program, index) => (
               <div 
                 key={index} 
-                className={`natural-card p-6 text-center group ${program.highlight ? 'ring-2 ring-blue-200 dark:ring-blue-700 bg-gradient-to-br from-blue-50/50 to-purple-50/50 dark:from-blue-900/20 dark:to-purple-900/20' : ''}`}
+                className={`natural-card p-6 text-center group ${program.highlight ? 'ring-2 ring-blue-200 dark:ring-blue-700 bg-blue-50 dark:bg-blue-900/20' : ''}`}
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border border-blue-200 dark:border-blue-700 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-xs font-bold text-blue-700 dark:text-blue-400">{program.icon}</span>
                 </div>
                 <h4 className="heading-font text-lg font-bold text-gray-900 dark:text-white mb-3">

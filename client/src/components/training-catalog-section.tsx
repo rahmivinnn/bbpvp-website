@@ -204,7 +204,7 @@ icon: Truck,
                     {program.price}
                   </span>
                 </div>
-                <button className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 text-sm font-medium group-hover:scale-105">
+                <button className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 text-sm font-medium group-hover:scale-105">
                   Ikuti Pelatihan
                   <ExternalLink className="w-4 h-4" />
                 </button>
@@ -239,7 +239,7 @@ icon: Truck,
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 md:p-12">
+          <div className="bg-blue-600 rounded-2xl p-8 md:p-12">
             <h3 className="heading-font text-3xl font-bold text-white mb-4">
               Siap Mengembangkan Karir Anda?
             </h3>
@@ -250,7 +250,7 @@ icon: Truck,
               <button className="px-8 py-3 bg-white text-blue-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-200">
                 Konsultasi Gratis
               </button>
-              <button className="px-8 py-3 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200">
+              <button className="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200">
                 Lihat Semua Program
               </button>
             </div>

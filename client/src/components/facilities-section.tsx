@@ -98,7 +98,7 @@ export function FacilitiesSection() {
         </div>
 
         {/* Bidang Keahlian Details */}
-        <div className="bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-800 dark:via-gray-700 dark:to-gray-800 rounded-3xl p-8 md:p-12">
+        <div className="bg-blue-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-blue-100 dark:border-gray-700">
           <h3 className="heading-font text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             Bidang Keahlian
           </h3>
