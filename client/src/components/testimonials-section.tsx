@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Quote, Star, User } from 'lucide-react';
 import duranPhoto from '@assets/WhatsApp Image 2025-08-16 at 4.24.45 PM_1755336457076.jpeg';
 import duranChristianPhoto from '@assets/WhatsApp Image 2025-08-16 at 4.26.30 PM_1755336694383.jpeg';
@@ -9,18 +9,6 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       id: 1,
-      name: 'Ahmad Rizki Pratama',
-      age: 24,
-      program: 'Pelatihan Otomotif - Engine Management',
-      company: 'PT. Astra Honda Motor',
-      position: 'Teknisi Senior',
-      photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
-      rating: 5,
-      testimonial: 'Setelah mengikuti pelatihan di BBPVP Bandung, hidup saya benar-benar berubah. Dari yang tadinya pengangguran, sekarang saya bekerja sebagai teknisi senior di Honda dengan gaji yang sangat memuaskan. Materinya sangat aplikatif dan instrukturnya berpengalaman langsung dari industri. Terima kasih BBPVP Bandung!',
-      year: '2023'
-    },
-    {
-      id: 2,
       name: 'Duran Assegaf',
       age: 26,
       program: 'TIK & Kreatif Digital',
@@ -32,7 +20,7 @@ export function TestimonialsSection() {
       year: '2024'
     },
     {
-      id: 3,
+      id: 2,
       name: 'Duran Christian',
       age: 27,
       program: 'Refrigerasi & Tata Udara',
@@ -57,7 +45,15 @@ export function TestimonialsSection() {
     setCurrentTestimonial(index);
   };
 
-  const current = testimonials[currentTestimonial];
+  // Ensure currentTestimonial is always within bounds
+  useEffect(() => {
+    if (currentTestimonial >= testimonials.length) {
+      setCurrentTestimonial(0);
+    }
+  }, [currentTestimonial, testimonials.length]);
+
+  // Safety check to ensure we have a valid testimonial
+  const current = testimonials[currentTestimonial] || testimonials[0];
 
   return (
     <section id="testimonials" className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
