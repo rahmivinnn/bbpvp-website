@@ -10,6 +10,7 @@ import { ContactSection } from '../components/contact-section';
 import { FacilitiesSection } from '../components/facilities-section';
 import { ServiceFlowSection } from '../components/service-flow-section';
 import { TrainingCatalogSection } from '../components/training-catalog-section';
+import { TestimonialsSection } from '../components/testimonials-section';
 import { ChatBot } from '../components/chatbot';
 import { Footer } from '../components/footer';
 import { ScrollProgress } from '../components/ui/scroll-progress';
@@ -41,6 +42,7 @@ export default function Home() {
         <FacilitiesSection />
         <ServiceFlowSection />
         <TrainingCatalogSection />
+        <TestimonialsSection />
         <ArticlesSection />
         <GallerySection />
         <ContactSection />
