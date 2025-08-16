@@ -27,20 +27,7 @@ export default function Home() {
     fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
     document.head.appendChild(fontAwesome);
 
-    // Navbar background change on scroll
-    const handleScroll = () => {
-      const nav = document.querySelector('nav');
-      if (nav) {
-        if (window.scrollY > 100) {
-          nav.classList.add('backdrop-blur-md', 'bg-white/90');
-        } else {
-          nav.classList.remove('backdrop-blur-md', 'bg-white/90');
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Navbar will stay consistently white - no scroll effects
   }, []);
 
   return (
