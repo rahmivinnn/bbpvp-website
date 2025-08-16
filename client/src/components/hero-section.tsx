@@ -42,7 +42,7 @@ export function HeroSection() {
         <div className="space-y-8 mt-32">
           <div className="hero-title">
             <div className="inline-block mb-6">
-              <span className="text-sm font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-4 py-2 rounded-full border border-emerald-200 dark:border-emerald-800">
+              <span className="text-sm font-medium text-emerald-700 bg-emerald-50 px-4 py-2 rounded-full border border-emerald-200">
                 Kementerian Ketenagakerjaan RI 🇮🇩
               </span>
             </div>
@@ -55,7 +55,7 @@ export function HeroSection() {
 
           <p className="hero-subtitle text-xl md:text-2xl text-white font-semibold mb-12 max-w-4xl mx-auto leading-relaxed" style={{marginLeft: '2rem', textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 15px rgba(255,255,255,0.3)'}}>
             Membangun SDM Indonesia yang kompeten dan produktif melalui 
-            <span className="font-semibold text-emerald-700 dark:text-emerald-400 underline decoration-wavy decoration-emerald-300"> pelatihan vokasi berkualitas tinggi</span>
+            <span className="font-semibold text-white underline decoration-wavy decoration-emerald-300"> pelatihan vokasi berkualitas tinggi</span>
           </p>
 
           <div className="hero-buttons flex flex-col sm:flex-row gap-6 justify-center" style={{marginLeft: '1rem'}}>
@@ -79,8 +79,8 @@ export function HeroSection() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gray-400 dark:bg-gray-600 rounded-full mt-2 animate-bounce"></div>
+        <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-bounce"></div>
         </div>
       </div>
     </section>

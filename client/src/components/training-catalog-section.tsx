@@ -84,27 +84,27 @@ icon: Truck,
   });
 
   return (
-    <section id="training-catalog" className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="training-catalog" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 rounded-lg text-sm font-medium mb-6 border border-orange-200 dark:border-orange-800">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-700 rounded-lg text-sm font-medium mb-6 border border-orange-200">
             <BookOpen className="w-4 h-4" />
             Katalog Pelatihan
           </div>
-          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
             <span>Temukan Pelatihan</span><br/>
             <span className="text-gradient"> Sesuai Bakat & Minatmu</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Berbagai program pelatihan berkualitas tinggi <br/>untuk mengembangkan kompetensi profesional Anda
           </p>
         </div>
 
         {/* Filters */}
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 mb-12 border border-gray-200 dark:border-gray-700">
+        <div className="bg-gray-50 rounded-xl p-6 mb-12 border border-gray-200">
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="flex-1">
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
                 Cari Pelatihan
               </label>
               <div className="relative">
@@ -114,7 +114,7 @@ icon: Truck,
                   placeholder="Masukkan judul atau kejuruan..."
                   value={searchFilter}
                   onChange={(e) => setSearchFilter(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent bg-white text-gray-900"
                 />
               </div>
             </div>
@@ -126,7 +126,7 @@ icon: Truck,
               <select
                 value={kejuruanFilter}
                 onChange={(e) => setKejuruanFilter(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent bg-white text-gray-900"
               >
                 {kejuruanOptions.map(option => (
                   <option key={option} value={option}>{option}</option>
@@ -141,37 +141,37 @@ icon: Truck,
           {filteredPrograms.map((program) => (
             <div 
               key={program.id} 
-              className={`natural-card p-6 group hover:shadow-xl transition-all duration-300 ${program.highlight ? 'ring-2 ring-green-200 dark:ring-green-700 bg-gradient-to-br from-green-50/50 to-blue-50/50 dark:from-green-900/20 dark:to-blue-900/20' : ''}`}
+              className={`natural-card p-6 group hover:shadow-xl transition-all duration-300 ${program.highlight ? 'ring-2 ring-green-200 bg-gradient-to-br from-green-50/50 to-blue-50/50' : ''}`}
             >
               {/* Header */}
               <div className="flex items-start justify-between mb-4">
-                <div className="p-3 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 rounded-xl">
+                <div className="p-3 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl">
                   {(() => {
                     const Icon = program.icon;
-                    return <Icon className="w-6 h-6 text-gray-700 dark:text-gray-300" />;
+                    return <Icon className="w-6 h-6 text-gray-700" />;
                   })()}
                 </div>
                 <div className="flex items-center gap-1">
                   <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                  <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
+                  <span className="text-sm font-medium text-gray-600">
                     {program.rating}
                   </span>
                 </div>
               </div>
 
               {/* Title */}
-              <h3 className="heading-font text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">
+              <h3 className="heading-font text-xl font-bold text-gray-900 mb-3 line-clamp-2">
                 {program.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
+              <p className="text-gray-600 text-sm mb-4 line-clamp-2">
                 {program.description}
               </p>
 
               {/* Details */}
               <div className="space-y-3 mb-6">
-                <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                <div className="flex items-center gap-2 text-sm text-gray-600">
                   <Clock className="w-4 h-4" />
                   <span>{program.duration}</span>
                   {program.totalTopik && (
@@ -182,12 +182,12 @@ icon: Truck,
                   )}
                 </div>
                 
-                <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                <div className="flex items-center gap-2 text-sm text-gray-600">
                   <BookOpen className="w-4 h-4" />
                   <span className="font-medium">{program.kejuruan}</span>
                 </div>
                 
-                <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                <div className="flex items-center gap-2 text-sm text-gray-600">
                   <Users className="w-4 h-4" />
                   <span>{program.subKejuruan}</span>
                 </div>
@@ -197,7 +197,7 @@ icon: Truck,
               <div className="flex items-center justify-between">
                 {program.price === 'Gratis' && (
                   <div>
-                    <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400">
+                    <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800">
                       {program.price}
                     </span>
                   </div>
@@ -216,8 +216,8 @@ icon: Truck,
 
               {/* Special Note */}
               {program.note && (
-                <div className="mt-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
-                  <p className="text-xs text-yellow-800 dark:text-yellow-400">
+                <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+                  <p className="text-xs text-yellow-800">
                     📝 {program.note}
                   </p>
                 </div>
@@ -229,13 +229,13 @@ icon: Truck,
         {/* No Results */}
         {filteredPrograms.length === 0 && (
           <div className="text-center py-12">
-            <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-full inline-block mb-4">
-              <Search className="w-8 h-8 text-gray-500 dark:text-gray-400" />
+            <div className="p-6 bg-gray-100 rounded-full inline-block mb-4">
+              <Search className="w-8 h-8 text-gray-500" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
               Tidak ada pelatihan yang ditemukan
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-gray-600">
               Coba ubah kata kunci pencarian atau filter kejuruan Anda
             </p>
           </div>

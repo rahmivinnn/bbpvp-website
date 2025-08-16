@@ -20,17 +20,17 @@ export function GallerySection() {
     : galleryData.filter(item => item.category === activeFilter);
 
   return (
-    <section id="gallery" className="py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <section id="gallery" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-2 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-400 rounded-full text-sm font-medium mb-6 border border-teal-200 dark:border-teal-800">
+          <div className="inline-block px-4 py-2 bg-teal-100 text-teal-700 rounded-full text-sm font-medium mb-6 border border-teal-200">
             Galeri Kami 📸
           </div>
-          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
             <span>Galeri</span>
             <span className="text-gradient" style={{marginLeft: '1rem'}}> Kegiatan</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed" style={{marginRight: '1rem'}}>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed" style={{marginRight: '1rem'}}>
             Dokumentasi kegiatan dan pencapaian BBPVP Bandung <br/>dalam mengembangkan SDM Indonesia
           </p>
         </div>
@@ -44,7 +44,7 @@ export function GallerySection() {
               className={`gallery-filter px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 flex items-center gap-2 ${
                 activeFilter === filter.key
                   ? 'bg-emerald-600 text-white shadow-lg border-2 border-emerald-400'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 shadow-sm border border-gray-200 dark:border-gray-600 hover:shadow-md'
+                  : 'bg-white text-gray-700 hover:bg-gray-100 shadow-sm border border-gray-200 hover:shadow-md'
               }`}
               style={{transform: activeFilter === filter.key ? 'scale(1.05)' : ''}}
             >
@@ -94,10 +94,10 @@ export function GallerySection() {
         
         {filteredGallery.length === 0 && (
           <div className="text-center py-12">
-            <div className="w-24 h-24 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Camera className="w-12 h-12 text-gray-400" />
             </div>
-            <p className="text-gray-500 dark:text-gray-400">Tidak ada gambar untuk kategori ini.</p>
+            <p className="text-gray-500">Tidak ada gambar untuk kategori ini.</p>
           </div>
         )}
       </div>

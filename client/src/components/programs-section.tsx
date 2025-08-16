@@ -6,17 +6,17 @@ export function ProgramsSection() {
   const [selectedProgram, setSelectedProgram] = useState<number | null>(null);
 
   return (
-    <section id="programs" className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="programs" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-2 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-full text-sm font-medium mb-6 border border-amber-200 dark:border-amber-800">
+          <div className="inline-block px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-medium mb-6 border border-amber-200">
             Program Kami 📚
           </div>
-          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
             <span>Program</span>
             <span className="text-gradient" style={{marginLeft: '1rem'}}> Unggulan</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed" style={{marginLeft: '1.5rem'}}>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed" style={{marginLeft: '1.5rem'}}>
             Berbagai program pelatihan vokasi yang dirancang <br/>untuk meningkatkan kompetensi dan produktivitas
           </p>
         </div>
@@ -52,21 +52,21 @@ export function ProgramsSection() {
                   <span className={`${program.categoryColor} px-3 py-1 rounded-xl text-xs font-medium tracking-wide`}>
                     {program.category}
                   </span>
-                  <div className="w-6 h-6 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
+                  <div className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                   </div>
                 </div>
                 
-                <h3 className="heading-font text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors line-clamp-2">
+                <h3 className="heading-font text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-700 transition-colors line-clamp-2">
                   {program.title}
                 </h3>
                 
-                <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm line-clamp-3 mb-4">
+                <p className="text-gray-600 leading-relaxed text-sm line-clamp-3 mb-4">
                   {program.description}
                 </p>
                 
-                <div className="pt-4 border-t border-gray-100 dark:border-gray-700">
-                  <div className="flex items-center text-emerald-700 dark:text-emerald-400 text-sm font-medium group-hover:translate-x-2 transition-transform duration-300">
+                <div className="pt-4 border-t border-gray-100">
+                  <div className="flex items-center text-emerald-700 text-sm font-medium group-hover:translate-x-2 transition-transform duration-300">
                     Pelajari Lebih Lanjut
                     <svg className="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

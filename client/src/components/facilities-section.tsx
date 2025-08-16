@@ -61,18 +61,18 @@ color: 'text-slate-600',
   ];
 
   return (
-    <section id="facilities" className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="facilities" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-900/30 text-slate-700 dark:text-slate-400 rounded-lg text-sm font-medium mb-6 border border-slate-200 dark:border-slate-800">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium mb-6 border border-slate-200">
             <Building className="w-4 h-4" />
             Fasilitas Kami
           </div>
-          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
             <span>Bidang Keahlian</span>
             <span className="text-gradient" style={{marginLeft: '1rem'}}> & Fasilitas</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Fasilitas modern dan lengkap untuk mendukung <br/>pembelajaran vokasi berkualitas tinggi
           </p>
         </div>
@@ -87,10 +87,10 @@ color: 'text-slate-600',
                   return <Icon className={`w-8 h-8 ${facility.color}`} />;
                 })()}
               </div>
-              <h4 className="heading-font text-lg font-bold text-gray-900 dark:text-white mb-3">
+              <h4 className="heading-font text-lg font-bold text-gray-900 mb-3">
                 {facility.title}
               </h4>
-              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 {facility.description}
               </p>
             </div>
@@ -98,64 +98,64 @@ color: 'text-slate-600',
         </div>
 
         {/* Bidang Keahlian Details */}
-        <div className="bg-slate-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-slate-100 dark:border-gray-700">
-          <h3 className="heading-font text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+        <div className="bg-slate-50 rounded-2xl p-8 md:p-12 border border-slate-100">
+          <h3 className="heading-font text-3xl font-bold text-gray-900 mb-8 text-center">
             Bidang Keahlian
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
-              <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
-                <h4 className="font-bold text-orange-600 dark:text-orange-400 mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-orange-100 dark:bg-orange-900/30 rounded-md flex items-center justify-center text-xs">AUTO</span> Otomotif
+              <div className="bg-white p-6 rounded-2xl shadow-sm">
+                <h4 className="font-bold text-orange-600 mb-3 flex items-center gap-2">
+                  <span className="w-6 h-6 bg-orange-100 rounded-md flex items-center justify-center text-xs">AUTO</span> Otomotif
                 </h4>
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed">
                   Engine management & injeksi, chasis/suspensi, electrical, sepeda motor, tren EV (fundamental).
                 </p>
               </div>
               
-              <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
-                <h4 className="font-bold text-green-600 dark:text-green-400 mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-green-100 dark:bg-green-900/30 rounded-md flex items-center justify-center text-xs">MFG</span> Manufaktur
+              <div className="bg-white p-6 rounded-2xl shadow-sm">
+                <h4 className="font-bold text-green-600 mb-3 flex items-center gap-2">
+                  <span className="w-6 h-6 bg-green-100 rounded-md flex items-center justify-center text-xs">MFG</span> Manufaktur
                 </h4>
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed">
                   Bubut-frais dasar, CNC milling & turning, CAD/CAM, metrologi, welding dasar.
                 </p>
               </div>
               
-              <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
-                <h4 className="font-bold text-slate-600 dark:text-slate-400 mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-blue-100 dark:bg-blue-900/30 rounded-md flex items-center justify-center text-xs">AC</span> Refrigerasi
+              <div className="bg-white p-6 rounded-2xl shadow-sm">
+                <h4 className="font-bold text-slate-600 mb-3 flex items-center gap-2">
+                  <span className="w-6 h-6 bg-blue-100 rounded-md flex items-center justify-center text-xs">AC</span> Refrigerasi
                 </h4>
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed">
                   AC split, chiller dasar, refrigerasi komersial, safe handling refrigerant.
                 </p>
               </div>
             </div>
             
             <div className="space-y-6">
-              <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
-                <h4 className="font-bold text-purple-600 dark:text-purple-400 mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-purple-100 dark:bg-purple-900/30 rounded-md flex items-center justify-center text-xs">TIK</span> TIK & Kreatif
+              <div className="bg-white p-6 rounded-2xl shadow-sm">
+                <h4 className="font-bold text-purple-600 mb-3 flex items-center gap-2">
+                  <span className="w-6 h-6 bg-purple-100 rounded-md flex items-center justify-center text-xs">TIK</span> TIK & Kreatif
                 </h4>
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed">
                   IT support, desain grafis cetak & media sosial, videografi drone, konten digital.
                 </p>
               </div>
               
-              <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
-                <h4 className="font-bold text-indigo-600 dark:text-indigo-400 mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-indigo-100 dark:bg-indigo-900/30 rounded-md flex items-center justify-center text-xs">SIM</span> Area Simulasi Kerja
+              <div className="bg-white p-6 rounded-2xl shadow-sm">
+                <h4 className="font-bold text-indigo-600 mb-3 flex items-center gap-2">
+                  <span className="w-6 h-6 bg-indigo-100 rounded-md flex items-center justify-center text-xs">SIM</span> Area Simulasi Kerja
                 </h4>
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed">
                   Simulasi kondisi kerja nyata untuk mempersiapkan peserta dengan lingkungan industri sebenarnya.
                 </p>
               </div>
               
-              <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
-                <h4 className="font-bold text-pink-600 dark:text-pink-400 mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-pink-100 dark:bg-pink-900/30 rounded-md flex items-center justify-center text-xs">EXPO</span> Booth Pameran
+              <div className="bg-white p-6 rounded-2xl shadow-sm">
+                <h4 className="font-bold text-pink-600 mb-3 flex items-center gap-2">
+                  <span className="w-6 h-6 bg-pink-100 rounded-md flex items-center justify-center text-xs">EXPO</span> Booth Pameran
                 </h4>
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed">
                   Area khusus untuk pameran karya peserta dan showcase hasil pembelajaran.
                 </p>
               </div>

@@ -33,17 +33,17 @@ icon: Diamond,
   ];
 
   return (
-    <section id="about" className="py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <section id="about" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full text-sm font-medium mb-6 border border-emerald-200 dark:border-emerald-800">
+          <div className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-6 border border-emerald-200">
             Tentang Kami 🏢
           </div>
-          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
             <span>Membangun Masa Depan</span><br/>
             <span className="text-gradient"> Indonesia</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Direktorat Jenderal Pembinaan Pelatihan dan Produktivitas <br/>Kementrian Ketenagakerjaan Republik Indonesia
           </p>
         </div>
@@ -51,20 +51,20 @@ icon: Diamond,
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="about-content space-y-8">
             <div>
-              <h3 className="heading-font text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              <h3 className="heading-font text-3xl font-bold text-gray-900 mb-6">
                 Sejarah & Komitmen Kami
               </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 BBPVP Bandung adalah UPT pusat Kementerian Ketenagakerjaan RI yang fokus mengubah potensi jadi kompetensi lewat pelatihan vokasi berbasis kompetensi (PBK), sertifikasi profesi, dan link-and-match dengan industri.
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Berlokasi strategis di Jl. Jenderal Gatot Subroto No. 170, Bandung, BBPVP Bandung melayani talenta muda, pencari kerja, hingga pekerja industri yang ingin upskill/reskill—dari otomotif, manufaktur, refrigerasi & tata udara, sampai teknologi informasi dan komunikasi.
               </p>
-              <div className="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-2xl mb-6 border border-slate-100 dark:border-slate-800">
-                <h4 className="heading-font text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+              <div className="bg-slate-50 p-6 rounded-2xl mb-6 border border-slate-100">
+                <h4 className="heading-font text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
                   <span className="text-2xl">🎯</span> PBL (Project Based Learning)
                 </h4>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   Metodologi pembelajaran berbasis proyek dengan <strong>real project dari industri</strong>, 
                   problem-based learning approach, dan collaborative team work untuk menghasilkan 
                   <strong>portofolio nyata</strong> dan kompetensi problem solving yang teruji.
@@ -79,7 +79,7 @@ icon: Diamond,
                     <div className="flex-shrink-0 w-7 h-7 bg-emerald-600 rounded-lg flex items-center justify-center mt-1">
                       <Check className="w-4 h-4 text-white" />
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed font-medium">{feature}</p>
+                    <p className="text-gray-700 text-sm leading-relaxed font-medium">{feature}</p>
                   </div>
                 </div>
               ))}
@@ -87,12 +87,12 @@ icon: Diamond,
           </div>
           
           <div className="about-image relative">
-            <div className="absolute -top-6 -left-6 w-16 h-16 bg-emerald-200 dark:bg-emerald-800 rounded-full opacity-60"></div>
-            <div className="absolute -bottom-3 -right-3 w-8 h-8 bg-amber-300 dark:bg-amber-600 rounded-full opacity-80"></div>
+            <div className="absolute -top-6 -left-6 w-16 h-16 bg-emerald-200 rounded-full opacity-60"></div>
+            <div className="absolute -bottom-3 -right-3 w-8 h-8 bg-amber-300 rounded-full opacity-80"></div>
             <img 
               src={bbpvpTrainingImage} 
               alt="BBPVP Training Session" 
-              className="relative rounded-2xl shadow-lg w-full h-auto transform hover:scale-105 hover:rotate-1 transition-all duration-500 border-4 border-white dark:border-gray-700"
+              className="relative rounded-2xl shadow-lg w-full h-auto transform hover:scale-105 hover:rotate-1 transition-all duration-500 border-4 border-white"
             />
             <div className="absolute top-4 right-4 w-4 h-4 bg-red-400 rounded-full animate-pulse"></div>
           </div>
@@ -111,8 +111,8 @@ icon: Diamond,
                   return <Icon className="w-8 h-8 text-white" />;
                 })()}
               </div>
-              <h4 className="heading-font text-xl font-bold text-gray-900 dark:text-white mb-4">{value.title}</h4>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <h4 className="heading-font text-xl font-bold text-gray-900 mb-4">{value.title}</h4>
+              <p className="text-gray-600 leading-relaxed text-sm">
                 {value.content}
               </p>
             </div>

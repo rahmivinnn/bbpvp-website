@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import { Moon, Sun, Menu, X } from 'lucide-react';
-import { useDarkMode } from '../hooks/use-dark-mode';
+import { Menu, X } from 'lucide-react';
 import kemnakerLogo from '@assets/logo kemnaker-BBPVP_1755319196993.png';
 import vokasiLogo from '@assets/logo vokasi-02_1755319200074.png';
 
 export function Navigation() {
-  const { isDark, toggleDark } = useDarkMode();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
@@ -27,7 +25,7 @@ export function Navigation() {
   };
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-b border-gray-200/60 dark:border-gray-700/60 transition-all duration-300">
+    <nav className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-200/60 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18">
           <div className="flex items-center space-x-6">
@@ -55,7 +53,7 @@ export function Navigation() {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="px-4 py-2 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 transition-all duration-200 transform hover:scale-105"
+                className="px-4 py-2 rounded-xl text-sm font-medium text-gray-700 hover:text-emerald-700 hover:bg-emerald-50 transition-all duration-200 transform hover:scale-105"
               >
                 {link.label}
               </button>
@@ -64,15 +62,8 @@ export function Navigation() {
 
           <div className="flex items-center space-x-3">
             <button
-              onClick={toggleDark}
-              className="w-11 h-11 rounded-xl bg-amber-100 dark:bg-amber-900/30 hover:bg-amber-200 dark:hover:bg-amber-800/40 transition-all duration-200 flex items-center justify-center transform hover:scale-110"
-            >
-              {isDark ? <Sun className="w-5 h-5 text-amber-600" /> : <Moon className="w-5 h-5 text-amber-700" />}
-            </button>
-            
-            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden w-11 h-11 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center transform hover:scale-110 transition-transform duration-200"
+              className="md:hidden w-11 h-11 rounded-xl bg-gray-100 flex items-center justify-center transform hover:scale-110 transition-transform duration-200"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -82,13 +73,13 @@ export function Navigation() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-t border-white/20 dark:border-gray-800/20">
+        <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-white/20">
           <div className="px-4 py-6 space-y-1">
             {navLinks.map((link) => (
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="block w-full text-left px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:text-slate-700 dark:hover:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900/20 transition-all duration-200"
+                className="block w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:text-slate-700 hover:bg-slate-50 transition-all duration-200"
               >
                 {link.label}
               </button>

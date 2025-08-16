@@ -51,18 +51,18 @@ export function CoreValuesSection() {
   ];
 
   return (
-    <section className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-900/30 text-slate-700 dark:text-slate-400 rounded-lg text-sm font-medium mb-6 border border-slate-200 dark:border-slate-800">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium mb-6 border border-slate-200">
             <span className="text-lg">💎</span>
             Core Values
           </div>
-          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
             <span>Nilai Inti</span>
             <span className="text-gradient" style={{marginLeft: '1rem'}}> INDUSTRY</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             8 nilai fundamental yang menjadi landasan <br/>setiap program dan layanan BBPVP Bandung
           </p>
         </div>
@@ -86,8 +86,8 @@ export function CoreValuesSection() {
                 className="absolute"
                 style={value.position}
               >
-                <div className="w-16 h-16 bg-white dark:bg-gray-800 border-2 border-slate-700 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-xl">
-                  <span className="font-bold text-slate-700 dark:text-slate-300 text-xl">{value.letter}</span>
+                <div className="w-16 h-16 bg-white border-2 border-slate-700 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-xl">
+                  <span className="font-bold text-slate-700 text-xl">{value.letter}</span>
                 </div>
               </div>
             ))}
@@ -102,11 +102,11 @@ export function CoreValuesSection() {
                 <span className="text-white font-bold text-xl">{value.letter}</span>
               </div>
               
-              <h4 className="heading-font text-lg font-bold text-gray-900 dark:text-white mb-3">
+              <h4 className="heading-font text-lg font-bold text-gray-900 mb-3">
                 {value.title}
               </h4>
               
-              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 {value.description}
               </p>
             </div>
@@ -115,18 +115,18 @@ export function CoreValuesSection() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-slate-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-slate-100 dark:border-gray-700">
-            <h3 className="heading-font text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="bg-slate-50 rounded-2xl p-8 md:p-12 border border-slate-100">
+            <h3 className="heading-font text-3xl font-bold text-gray-900 mb-4">
               Nilai-Nilai yang Menginspirasi
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-gray-600 mb-8 text-lg max-w-2xl mx-auto leading-relaxed">
               Setiap program pelatihan di BBPVP Bandung dirancang dengan menerapkan 8 nilai inti INDUSTRY untuk menghasilkan lulusan yang tidak hanya kompeten secara teknis, tetapi juga berkarakter kuat dan siap menghadapi tantangan industri modern.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-3 bg-slate-700 text-white rounded-xl font-semibold hover:bg-slate-800 transition-colors duration-200">
                 Pelajari Program Kami
               </button>
-              <button className="px-8 py-3 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 rounded-xl font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-200">
+              <button className="px-8 py-3 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold hover:bg-slate-50 transition-all duration-200">
                 Hubungi Kami
               </button>
             </div>

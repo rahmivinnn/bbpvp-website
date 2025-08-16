@@ -92,19 +92,19 @@ icon: 'PBL',
   ];
 
   return (
-    <section id="service-flow" className="py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <section id="service-flow" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Program Excellence */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-900/30 text-slate-700 dark:text-slate-400 rounded-lg text-sm font-medium mb-6 border border-slate-200 dark:border-slate-800">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium mb-6 border border-slate-200">
             <Award className="w-4 h-4" />
             Program Keunggulan
           </div>
-          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
             <span>Program</span>
             <span className="text-gradient" style={{marginLeft: '1rem'}}> Keunggulan</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed mb-16">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-16">
             Berbagai program unggulan yang dirancang khusus <br/>untuk menghasilkan talenta kompeten dan siap industri
           </p>
           
@@ -113,15 +113,15 @@ icon: 'PBL',
             {programs.map((program, index) => (
               <div 
                 key={index} 
-                className={`natural-card p-6 text-center group ${program.highlight ? 'ring-2 ring-slate-200 dark:ring-slate-700 bg-slate-50 dark:bg-slate-900/20' : ''}`}
+                className={`natural-card p-6 text-center group ${program.highlight ? 'ring-2 ring-slate-200 bg-slate-50' : ''}`}
               >
-                <div className="w-12 h-12 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-700 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-xs font-bold text-slate-700 dark:text-slate-400">{program.icon}</span>
+                <div className="w-12 h-12 bg-slate-50 border border-slate-200 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-xs font-bold text-slate-700">{program.icon}</span>
                 </div>
-                <h4 className="heading-font text-lg font-bold text-gray-900 dark:text-white mb-3">
+                <h4 className="heading-font text-lg font-bold text-gray-900 mb-3">
                   {program.title}
                 </h4>
-                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed">
                   {program.description}
                 </p>
               </div>
@@ -131,15 +131,15 @@ icon: 'PBL',
 
         {/* Service Flow */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-lg text-sm font-medium mb-6 border border-green-200 dark:border-green-800">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-700 rounded-lg text-sm font-medium mb-6 border border-green-200">
             <ClipboardCheck className="w-4 h-4" />
             Skema Layanan
           </div>
-          <h2 className="section-title heading-font text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h2 className="section-title heading-font text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
             <span>Skema Layanan &</span>
             <span className="text-gradient" style={{marginLeft: '1rem'}}> Alur Pendaftar</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Alur proses yang terstruktur untuk memastikan <br/>kualitas peserta dan hasil pembelajaran optimal
           </p>
         </div>
@@ -160,13 +160,13 @@ icon: 'PBL',
                         <div className={`w-16 h-16 ${step.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                           <Icon className={`w-8 h-8 ${step.color}`} />
                         </div>
-                        <div className={`w-8 h-8 ${step.color} bg-white dark:bg-gray-800 rounded-full flex items-center justify-center text-sm font-bold mb-3 mx-auto border-2`}>
+                        <div className={`w-8 h-8 ${step.color} bg-white rounded-full flex items-center justify-center text-sm font-bold mb-3 mx-auto border-2`}>
                           {step.number}
                         </div>
-                        <h4 className="heading-font text-lg font-bold text-gray-900 dark:text-white mb-3">
+                        <h4 className="heading-font text-lg font-bold text-gray-900 mb-3">
                           {step.title}
                         </h4>
-                        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        <p className="text-gray-600 text-sm leading-relaxed">
                           {step.description}
                         </p>
                       </div>
@@ -191,13 +191,13 @@ icon: 'PBL',
                         <div className={`w-16 h-16 ${step.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                           <Icon className={`w-8 h-8 ${step.color}`} />
                         </div>
-                        <div className={`w-8 h-8 ${step.color} bg-white dark:bg-gray-800 rounded-full flex items-center justify-center text-sm font-bold mb-3 mx-auto border-2`}>
+                        <div className={`w-8 h-8 ${step.color} bg-white rounded-full flex items-center justify-center text-sm font-bold mb-3 mx-auto border-2`}>
                           {step.number}
                         </div>
-                        <h4 className="heading-font text-lg font-bold text-gray-900 dark:text-white mb-3">
+                        <h4 className="heading-font text-lg font-bold text-gray-900 mb-3">
                           {step.title}
                         </h4>
-                        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        <p className="text-gray-600 text-sm leading-relaxed">
                           {step.description}
                         </p>
                       </div>
@@ -222,13 +222,13 @@ icon: 'PBL',
                         <div className={`w-16 h-16 ${step.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                           <Icon className={`w-8 h-8 ${step.color}`} />
                         </div>
-                        <div className={`w-8 h-8 ${step.color} bg-white dark:bg-gray-800 rounded-full flex items-center justify-center text-sm font-bold mb-3 mx-auto border-2`}>
+                        <div className={`w-8 h-8 ${step.color} bg-white rounded-full flex items-center justify-center text-sm font-bold mb-3 mx-auto border-2`}>
                           {step.number}
                         </div>
-                        <h4 className="heading-font text-lg font-bold text-gray-900 dark:text-white mb-3">
+                        <h4 className="heading-font text-lg font-bold text-gray-900 mb-3">
                           {step.title}
                         </h4>
-                        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        <p className="text-gray-600 text-sm leading-relaxed">
                           {step.description}
                         </p>
                       </div>
@@ -252,10 +252,10 @@ icon: 'PBL',
                     <div className={`w-8 h-8 ${step.color} bg-white dark:bg-gray-800 rounded-full flex items-center justify-center text-sm font-bold mb-3 mx-auto border-2`}>
                       {step.number}
                     </div>
-                    <h4 className="heading-font text-lg font-bold text-gray-900 dark:text-white mb-3">
+                    <h4 className="heading-font text-lg font-bold text-gray-900 mb-3">
                       {step.title}
                     </h4>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed">
                       {step.description}
                     </p>
                   </div>

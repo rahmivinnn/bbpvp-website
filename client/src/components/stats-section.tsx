@@ -48,7 +48,7 @@ export function StatsSection() {
   }, []);
 
   return (
-    <section className="py-16 bg-slate-800 dark:bg-slate-900 transition-colors duration-300">
+    <section className="py-16 bg-slate-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Header */}
         <div className="mb-12">

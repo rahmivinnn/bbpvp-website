@@ -32,9 +32,9 @@ export default function Home() {
       const nav = document.querySelector('nav');
       if (nav) {
         if (window.scrollY > 100) {
-          nav.classList.add('backdrop-blur-md', 'bg-white/90', 'dark:bg-slate-900/90');
+          nav.classList.add('backdrop-blur-md', 'bg-white/90');
         } else {
-          nav.classList.remove('backdrop-blur-md', 'bg-white/90', 'dark:bg-slate-900/90');
+          nav.classList.remove('backdrop-blur-md', 'bg-white/90');
         }
       }
     };
