@@ -79,7 +79,7 @@ export const programData: Record<number, ProgramData> = {
   3: {
     id: 3,
     title: 'Bidang Keahlian Manufaktur',
-    image: bbpvpForklift,
+    image: whatsapp2,
     category: 'Manufaktur',
     categoryColor: 'bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400',
     icon: 'fas fa-industry',
@@ -102,7 +102,7 @@ export const programData: Record<number, ProgramData> = {
   4: {
     id: 4,
     title: 'Bidang Keahlian Refrigerasi',
-    image: bbpvpMeeting,
+    image: whatsapp4,
     category: 'Refrigerasi',
     categoryColor: 'bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400',
     icon: 'fas fa-snowflake',
@@ -168,7 +168,7 @@ export const programData: Record<number, ProgramData> = {
   7: {
     id: 7,
     title: 'Job Matching & Job Fair',
-    image: bbpvpForklift,
+    image: whatsapp11,
     category: 'Karier',
     categoryColor: 'bg-teal-100 dark:bg-teal-900 text-teal-600 dark:text-teal-400',
     icon: 'fas fa-handshake',
@@ -212,7 +212,7 @@ export const programData: Record<number, ProgramData> = {
   9: {
     id: 9,
     title: 'Inkubasi & Showcase',
-    image: bbpvpSeating,
+    image: whatsapp6,
     category: 'Wirausaha',
     categoryColor: 'bg-cyan-100 dark:bg-cyan-900 text-cyan-600 dark:text-cyan-400',
     icon: 'fas fa-lightbulb',

@@ -1,4 +1,4 @@
-import { Building, Users, Laptop, Utensils, Calendar, Award, Eye, Home } from 'lucide-react';
+import { Building, Users, Laptop, Utensils, Calendar, Award, Eye, Home, MapPin, Car, TreePine, Star } from 'lucide-react';
 import { InfoButton } from './info-button';
 
 export function FacilitiesSection() {
@@ -7,7 +7,7 @@ export function FacilitiesSection() {
       icon: Building,
       title: 'Workshop Berstandar Industri',
       description: 'Fasilitas workshop dengan peralatan dan SOP selevel industri',
-color: 'text-slate-600',
+      color: 'text-slate-600',
       bgColor: 'bg-blue-100'
     },
     {
@@ -58,6 +58,34 @@ color: 'text-slate-600',
       description: 'Area publik untuk pameran dan showcase hasil karya peserta',
       color: 'text-pink-600',
       bgColor: 'bg-pink-100'
+    },
+    {
+      icon: MapPin,
+      title: 'Masjid',
+      description: 'Fasilitas ibadah yang nyaman untuk seluruh peserta dan staff',
+      color: 'text-emerald-600',
+      bgColor: 'bg-emerald-100'
+    },
+    {
+      icon: Car,
+      title: 'Area Parkir',
+      description: 'Area parkir luas dan aman untuk kendaraan peserta dan tamu',
+      color: 'text-gray-600',
+      bgColor: 'bg-gray-100'
+    },
+    {
+      icon: TreePine,
+      title: 'Taman Inspiratif',
+      description: 'Ruang terbuka hijau untuk relaksasi dan inspirasi peserta',
+      color: 'text-lime-600',
+      bgColor: 'bg-lime-100'
+    },
+    {
+      icon: Star,
+      title: 'Talent Corner',
+      description: 'Area khusus untuk mengembangkan dan showcase talenta peserta',
+      color: 'text-yellow-600',
+      bgColor: 'bg-yellow-100'
     }
   ];
 
@@ -82,7 +110,7 @@ color: 'text-slate-600',
         </div>
 
         {/* Facilities Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
           {facilities.map((facility, index) => (
             <div key={index} className="natural-card p-6 text-center group hover:shadow-lg transition-all duration-300">
               <div className={`w-16 h-16 ${facility.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
@@ -155,14 +183,58 @@ color: 'text-slate-600',
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-2xl shadow-sm">
-                <h4 className="font-bold text-pink-600 mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-pink-100 rounded-md flex items-center justify-center text-xs">EXPO</span> Booth Pameran
-                </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Area khusus untuk pameran karya peserta dan showcase hasil pembelajaran.
-                </p>
-              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Fasilitas Siswa */}
+        <div className="mt-16 grid lg:grid-cols-2 gap-8">
+          {/* Boarding */}
+          <div className="bg-blue-50 rounded-2xl p-8 border border-blue-200">
+            <h3 className="heading-font text-2xl font-bold text-blue-900 mb-6 text-center">
+              🏠 Fasilitas Siswa Boarding
+            </h3>
+            <div className="space-y-4">
+              {[
+                'Asrama dengan kamar nyaman',
+                'Pakaian kerja lengkap',
+                'Modul pelatihan',
+                'Snack harian',
+                'Makan 3x sehari (pagi, siang, malam)',
+                'Uang saku pelatihan',
+                'Uang saku OJT',
+                'Asuransi pelatihan',
+                'Asuransi OJT'
+              ].map((item, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <span className="text-blue-800 text-sm font-medium">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Non-Boarding */}
+          <div className="bg-green-50 rounded-2xl p-8 border border-green-200">
+            <h3 className="heading-font text-2xl font-bold text-green-900 mb-6 text-center">
+              🎒 Fasilitas Siswa Non-Boarding
+            </h3>
+            <div className="space-y-4">
+              {[
+                'Pakaian kerja lengkap',
+                'Modul pelatihan',
+                'Snack harian',
+                'Makan 1x sehari',
+                'Uang saku pelatihan',
+                'Uang saku OJT',
+                'Asuransi pelatihan',
+                'Asuransi OJT'
+              ].map((item, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <span className="text-green-800 text-sm font-medium">{item}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

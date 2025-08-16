@@ -14,22 +14,16 @@ export function AboutSection() {
 
   const values = [
     {
-icon: Target,
+      icon: Target,
       title: 'Visi Kami',
       content: 'Menjadi pusat unggulan vokasi dan produktivitas yang adaptif, inklusif, dan berjejaring—melahirkan talenta kompeten yang terserap industri atau mandiri berwirausaha.',
       gradient: 'from-blue-500 to-purple-600'
     },
     {
-icon: Zap,
+      icon: Zap,
       title: 'Misi Kami',
-      content: '1. Menyelenggarakan PBK berstandar industri dengan porsi praktik dominan\n2. Memperkuat ekosistem sertifikasi & TUK agar pengakuan kompetensi merata\n3. Mendorong kemitraan strategis DUDI–kampus–komunitas untuk desain kurikulum agile\n4. Meningkatkan produktivitas melalui budaya K3, 5R/5S, lean, dan digitalisasi proses\n5. Menggerakkan job matching yang efektif melalui career service & job fair kurasi',
+      content: '1. Menyelenggarakan PBK berstandar industri dengan porsi praktik dominan\n\n2. Memperkuat ekosistem sertifikasi & TUK agar pengakuan kompetensi merata\n\n3. Mendorong kemitraan strategis DUDI–kampus–komunitas untuk desain kurikulum agile\n\n4. Meningkatkan produktivitas melalui budaya K3, 5R/5S, lean, dan digitalisasi proses\n\n5. Menggerakkan job matching yang efektif melalui career service & job fair kurasi',
       gradient: 'from-purple-500 to-pink-600'
-    },
-    {
-icon: Diamond,
-      title: 'Core Values INDUSTRY',
-      content: 'INTEGRITY - Jujur, akuntabel, anti "asal lulus"\nNIMBLE - Responsif terhadap tren (EV, CNC, IoT, kreatif digital)\nDELIVERY - Outcome-based: portofolio, sertifikat, pekerjaan\nUNITY - Kolaborasi DUDI–pemerintah–komunitas–alumni\nSAFETY - K3 jadi mindset, bukan formalitas\nTOP-NOTCH TOOLS - Peralatan & SOP selevel industri\nRESPECT - Inklusif, ramah pemula & penyandang disabilitas ringan\nIMPACT - Dampak sosial-ekonomi nyata bagi keluarga & daerah',
-      gradient: 'from-orange-500 to-red-600'
     }
   ];
 
@@ -102,21 +96,23 @@ icon: Diamond,
           </div>
         </div>
 
-        {/* Vision, Mission, Values */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Vision, Mission */}
+        <div className="grid md:grid-cols-2 gap-8">
           {values.map((value, index) => (
             <div 
               key={index}
-              className="natural-card p-8 text-center group"
+              className="natural-card p-8 group"
             >
-              <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center mb-6 mx-auto transform group-hover:scale-110 transition-all duration-300">
-                {(() => {
-                  const Icon = value.icon;
-                  return <Icon className="w-8 h-8 text-white" />;
-                })()}
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center mr-4 transform group-hover:scale-110 transition-all duration-300">
+                  {(() => {
+                    const Icon = value.icon;
+                    return <Icon className="w-8 h-8 text-white" />;
+                  })()}
+                </div>
+                <h4 className="heading-font text-2xl font-bold text-gray-900">{value.title}</h4>
               </div>
-              <h4 className="heading-font text-xl font-bold text-gray-900 mb-4">{value.title}</h4>
-              <p className="text-gray-600 leading-relaxed text-sm">
+              <p className="text-gray-700 leading-relaxed text-base text-justify whitespace-pre-line">
                 {value.content}
               </p>
             </div>
