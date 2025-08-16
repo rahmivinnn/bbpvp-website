@@ -39,22 +39,8 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-black/30"></div>
 
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        {/* Logo */}
-        <div className="mb-8 mt-20 flex justify-center">
-          <div className="relative">
-            <div className="w-40 h-40 rounded-2xl flex items-center justify-center shadow-xl bg-white/90 backdrop-blur-sm">
-              <img 
-                src={logoImage} 
-                alt="BBPVP Bandung Logo" 
-                className="h-32 w-32 object-contain"
-              />
-            </div>
-            <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-amber-400 rounded-full"></div>
-            <div className="absolute -top-1 -left-2 w-3 h-3 bg-red-400 rounded-full animate-pulse"></div>
-          </div>
-        </div>
 
-        <div className="space-y-8 mt-16">
+        <div className="space-y-8 mt-32">
           <div className="hero-title">
             <div className="inline-block mb-6">
               <span className="text-sm font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-4 py-2 rounded-full border border-emerald-200 dark:border-emerald-800">
