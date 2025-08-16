@@ -13,7 +13,7 @@ export function TrainingCatalogSection() {
       version: 'Versi 1',
       kejuruan: 'Teknologi Informasi dan Komunikasi',
       subKejuruan: 'Information System and Technology Development',
-      price: 'Berbayar',
+price: '',
       rating: 4.5,
 icon: Cpu,
       description: 'Pelajari penggunaan tools AI generative untuk mengoptimalkan konten digital dan strategi bisnis modern'
@@ -26,7 +26,7 @@ icon: Cpu,
       totalTopik: '9 topik',
       kejuruan: 'Manufaktur',
       subKejuruan: 'Mesin Produksi',
-      price: 'Berbayar',
+price: '',
       rating: 4.8,
 icon: Wrench,
       description: 'Kuasai teknologi predictive maintenance untuk meningkatkan efisiensi mesin produksi industri'
@@ -39,7 +39,7 @@ icon: Wrench,
       totalTopik: '6 topik',
       kejuruan: 'Pariwisata',
       subKejuruan: 'Layanan Perjalanan (Travel Services)',
-      price: 'Berbayar',
+price: '',
       rating: 4.3,
 icon: MapPin,
       description: 'Bangun sistem informasi pariwisata komprehensif untuk meningkatkan layanan travel'
@@ -52,7 +52,7 @@ icon: MapPin,
       totalTopik: '12 topik',
       kejuruan: 'Teknologi Informasi dan Komunikasi',
       subKejuruan: 'IT Services Management System',
-      price: 'Berbayar',
+price: '',
       rating: 4.9,
 icon: Code,
       description: 'Master full-stack web development dengan teknologi Node.js dan React terkini'
@@ -195,19 +195,23 @@ icon: Truck,
 
               {/* Price & CTA */}
               <div className="flex items-center justify-between">
-                <div>
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                    program.price === 'Gratis' 
-                      ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400'
-                      : 'bg-slate-100 text-slate-800 dark:bg-slate-900/30 dark:text-slate-400'
-                  }`}>
-                    {program.price}
-                  </span>
-                </div>
-                <button className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white rounded-lg transition-all duration-200 text-sm font-medium group-hover:scale-105">
+                {program.price === 'Gratis' && (
+                  <div>
+                    <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400">
+                      {program.price}
+                    </span>
+                  </div>
+                )}
+                {program.price !== 'Gratis' && <div></div>}
+                <a 
+                  href="https://bbpvpbandung.kemnaker.go.id/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white rounded-lg transition-all duration-200 text-sm font-medium group-hover:scale-105"
+                >
                   Ikuti Pelatihan
                   <ExternalLink className="w-4 h-4" />
-                </button>
+                </a>
               </div>
 
               {/* Special Note */}
