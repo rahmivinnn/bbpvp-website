@@ -4,13 +4,13 @@ export function CoreValuesSection() {
       letter: 'I',
       title: 'INTEGRITY',
       description: 'JUJUR, AKUNTABEL, ANTI "ASAL LULUS".',
-      position: { top: '10%', left: '50%', transform: 'translateX(-50%)' }
+      position: { top: '5%', left: '50%', transform: 'translateX(-50%)' }
     },
     {
       letter: 'N',
       title: 'NIMBLE',
       description: 'RESPONSIF TERHADAP TREN (EV, CNC, IOT, KREATIF DIGITAL).',
-      position: { top: '25%', right: '15%' }
+      position: { top: '20%', right: '20%' }
     },
     {
       letter: 'D',
@@ -22,19 +22,19 @@ export function CoreValuesSection() {
       letter: 'U',
       title: 'UNITY',
       description: 'KOLABORASI DUDI-PEMERINTAH-KOMUNITAS-ALUMNI.',
-      position: { bottom: '25%', right: '15%' }
+      position: { bottom: '20%', right: '20%' }
     },
     {
       letter: 'S',
       title: 'SAFETY',
       description: 'K3 JADI MINDSET, BUKAN FORMALITAS.',
-      position: { bottom: '10%', left: '50%', transform: 'translateX(-50%)' }
+      position: { bottom: '5%', left: '50%', transform: 'translateX(-50%)' }
     },
     {
       letter: 'T',
       title: 'TOP-NOTCH TOOLS',
       description: 'PERALATAN & SOP SELEVEL INDUSTRI.',
-      position: { bottom: '25%', left: '15%' }
+      position: { bottom: '20%', left: '20%' }
     },
     {
       letter: 'R',
@@ -46,7 +46,7 @@ export function CoreValuesSection() {
       letter: 'Y',
       title: 'IMPACT',
       description: 'DAMPAK SOSIAL-EKONOMI NYATA BAGI KELUARGA & DAERAH',
-      position: { top: '25%', left: '15%' }
+      position: { top: '20%', left: '20%' }
     }
   ];
 
@@ -67,40 +67,27 @@ export function CoreValuesSection() {
           </p>
         </div>
 
-        {/* Circular Diagram */}
+        {/* Circular Diagram - Clean Version */}
         <div className="relative max-w-4xl mx-auto mb-20">
-          {/* Central Circle */}
           <div className="relative w-full aspect-square max-w-lg mx-auto">
-            <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-slate-700 rounded-full flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2 z-10">
+            {/* Central Circle */}
+            <div className="absolute top-1/2 left-1/2 w-40 h-40 bg-slate-700 rounded-full flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2 z-10 shadow-lg">
               <div className="text-center">
-                <div className="text-white font-bold text-sm leading-tight">
+                <div className="text-white font-bold text-lg leading-tight">
                   CORE<br/>VALUE
                 </div>
               </div>
             </div>
 
-            {/* Value Points */}
+            {/* Value Points - Clean without connection lines */}
             {coreValues.map((value, index) => (
               <div
                 key={index}
                 className="absolute"
                 style={value.position}
               >
-                {/* Connection Line */}
-                <div className={`absolute w-16 h-0.5 bg-slate-300 dark:bg-slate-600 ${
-                  value.position.top === '10%' ? 'top-8 left-1/2 -translate-x-1/2 rotate-90' :
-                  value.position.right === '15%' && value.position.top === '25%' ? 'top-4 -left-8 rotate-45' :
-                  value.position.right === '5%' ? 'top-1/2 -left-16 -translate-y-1/2' :
-                  value.position.bottom === '25%' && value.position.right === '15%' ? 'bottom-4 -left-8 -rotate-45' :
-                  value.position.bottom === '10%' ? 'bottom-8 left-1/2 -translate-x-1/2 -rotate-90' :
-                  value.position.bottom === '25%' && value.position.left === '15%' ? 'bottom-4 -right-8 rotate-45' :
-                  value.position.left === '5%' ? 'top-1/2 -right-16 -translate-y-1/2' :
-                  'top-4 -right-8 -rotate-45'
-                }`}></div>
-
-                {/* Value Circle */}
-                <div className="w-12 h-12 bg-white dark:bg-gray-800 border-2 border-slate-700 rounded-full flex items-center justify-center shadow-lg">
-                  <span className="font-bold text-slate-700 dark:text-slate-300 text-lg">{value.letter}</span>
+                <div className="w-16 h-16 bg-white dark:bg-gray-800 border-2 border-slate-700 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-xl">
+                  <span className="font-bold text-slate-700 dark:text-slate-300 text-xl">{value.letter}</span>
                 </div>
               </div>
             ))}
