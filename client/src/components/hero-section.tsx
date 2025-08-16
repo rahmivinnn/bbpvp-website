@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
 import logoImage from '@assets/bbp-removebg-preview_1755309171525.png';
-import backgroundImage from '@assets/WhatsApp Image 2025-08-16 at 11.03.54 AM_1755317048782.jpeg';
+import backgroundImage from '@assets/WhatsApp Image 2025-08-16 at 11.02.14 AM (1)_1755317451418.jpeg';
 
 export function HeroSection() {
   useEffect(() => {
