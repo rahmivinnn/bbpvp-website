@@ -175,6 +175,28 @@
     background: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
+
+  /* Section title styling */
+  .section-title {
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    word-spacing: 0.1em;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+
+  /* Ensure headings are always visible */
+  .heading-font {
+    visibility: visible !important;
+    display: block !important;
+  }
+
+  /* Fallback for when GSAP hasn't loaded yet */
+  .section-title:not(.gsap-animated) {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
 }
 
 @layer utilities {

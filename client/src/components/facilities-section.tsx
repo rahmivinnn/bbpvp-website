@@ -1,4 +1,5 @@
 import { Building, Users, Laptop, Utensils, Calendar, Award, Eye, Home } from 'lucide-react';
+import { InfoButton } from './info-button';
 
 export function FacilitiesSection() {
   const facilities = [
@@ -72,9 +73,12 @@ color: 'text-slate-600',
             <span>Bidang Keahlian</span>
             <span className="text-gradient" style={{marginLeft: '1rem'}}> & Fasilitas</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
             Fasilitas modern dan lengkap untuk mendukung <br/>pembelajaran vokasi berkualitas tinggi
           </p>
+          <div className="flex justify-center">
+            <InfoButton variant="primary" size="md" section="facilities" />
+          </div>
         </div>
 
         {/* Facilities Grid */}

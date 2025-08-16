@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, MessageSquare, ExternalLink, AlertTriangle, Shield } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
+import { InfoButton } from './info-button';
 
 export function ContactSection() {
   const { toast } = useToast();
@@ -121,6 +122,11 @@ export function ContactSection() {
                 </div>
               </div>
             ))}
+
+            {/* Info Button */}
+            <div className="mb-6">
+              <InfoButton variant="primary" size="md" section="contact" />
+            </div>
 
             {/* Service Links */}
             <div className="space-y-6">

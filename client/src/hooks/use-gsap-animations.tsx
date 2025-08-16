@@ -59,6 +59,9 @@ export function useGSAPAnimations() {
 
     // Section titles animation
     gsap.utils.toArray('.section-title').forEach((title: any) => {
+      // Mark as animated for CSS fallback
+      title.classList.add('gsap-animated');
+      
       gsap.fromTo(title, {
         opacity: 0,
         y: 50
@@ -70,7 +73,11 @@ export function useGSAPAnimations() {
         scrollTrigger: {
           trigger: title,
           start: 'top 80%',
-          toggleActions: 'play none none reverse'
+          toggleActions: 'play none none reverse',
+          onComplete: () => {
+            // Ensure it stays visible
+            gsap.set(title, {opacity: 1, y: 0});
+          }
         }
       });
     });

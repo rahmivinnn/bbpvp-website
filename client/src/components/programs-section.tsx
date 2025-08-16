@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { programData } from '../lib/program-data';
 import { ProgramModal } from './modals/program-modal';
+import { InfoButton } from './info-button';
 
 export function ProgramsSection() {
   const [selectedProgram, setSelectedProgram] = useState<number | null>(null);
@@ -16,9 +17,12 @@ export function ProgramsSection() {
             <span>Program</span>
             <span className="text-gradient" style={{marginLeft: '1rem'}}> Unggulan</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed" style={{marginLeft: '1.5rem'}}>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8" style={{marginLeft: '1.5rem'}}>
             Berbagai program pelatihan vokasi yang dirancang <br/>untuk meningkatkan kompetensi dan produktivitas
           </p>
+          <div className="flex justify-center">
+            <InfoButton variant="primary" size="md" section="programs" />
+          </div>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

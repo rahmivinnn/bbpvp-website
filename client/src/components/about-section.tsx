@@ -1,5 +1,6 @@
 import { Check, Target, Zap, Diamond } from 'lucide-react';
 import bbpvpTrainingImage from '@assets/unnamed (4)_1755321002006.webp';
+import { InfoButton } from './info-button';
 
 export function AboutSection() {
   const features = [
@@ -64,11 +65,14 @@ icon: Diamond,
                 <h4 className="heading-font text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
                   <span className="text-2xl">🎯</span> PBL (Project Based Learning)
                 </h4>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed mb-4">
                   Metodologi pembelajaran berbasis proyek dengan <strong>real project dari industri</strong>, 
                   problem-based learning approach, dan collaborative team work untuk menghasilkan 
                   <strong>portofolio nyata</strong> dan kompetensi problem solving yang teruji.
                 </p>
+                <div className="flex justify-start">
+                  <InfoButton variant="primary" size="sm" section="programs" />
+                </div>
               </div>
             </div>
             
