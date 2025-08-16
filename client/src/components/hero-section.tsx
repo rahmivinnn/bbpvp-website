@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
 import logoImage from '@assets/bbp-removebg-preview_1755309171525.png';
+import backgroundImage from '@assets/WhatsApp Image 2025-08-16 at 11.03.54 AM_1755317048782.jpeg';
 
 export function HeroSection() {
   useEffect(() => {
@@ -33,19 +34,15 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden hero-bg">
-      {/* Modern background */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white to-purple-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-purple-600/20 rounded-full filter blur-3xl animate-float"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-400/20 to-pink-600/20 rounded-full filter blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
-      </div>
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-black/30"></div>
 
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         {/* Logo */}
         <div className="mb-8 mt-20 flex justify-center">
           <div className="relative">
-            <div className="w-40 h-40 rounded-2xl flex items-center justify-center shadow-xl bg-white/80 backdrop-blur-sm">
+            <div className="w-40 h-40 rounded-2xl flex items-center justify-center shadow-xl bg-white/90 backdrop-blur-sm">
               <img 
                 src={logoImage} 
                 alt="BBPVP Bandung Logo" 
