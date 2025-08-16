@@ -43,7 +43,7 @@ export function HeroSection() {
 
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         {/* Logo */}
-        <div className="mb-8 flex justify-center">
+        <div className="mb-8 mt-20 flex justify-center">
           <div className="relative">
             <div className="w-40 h-40 rounded-2xl flex items-center justify-center shadow-xl bg-white/80 backdrop-blur-sm">
               <img 
