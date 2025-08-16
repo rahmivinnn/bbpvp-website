@@ -27,7 +27,7 @@ export function ContactSection() {
     {
       icon: Mail,
       title: 'Email & Website',
-      content: 'info.bbpvpbandung@kemnaker.co.id\nbbpvpbandung.kemnaker.go.id\nlinktr.ee/bbpvp_bandung',
+      content: 'info.bbpvpbandung@kemnaker.go.id\nbbpvpbandung.kemnaker.go.id\nlinktr.ee/bbpvp_bandung',
       bgColor: 'bg-orange-500'
     }
   ];
