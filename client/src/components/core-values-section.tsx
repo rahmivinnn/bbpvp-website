@@ -94,46 +94,6 @@ export function CoreValuesSection() {
           </div>
         </div>
 
-        {/* Core Values Text List */}
-        <div className="bg-slate-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-slate-100 dark:border-gray-700 mb-16">
-          <div className="max-w-4xl mx-auto">
-            <ul className="space-y-4 text-gray-700 dark:text-gray-300">
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>INTEGRITY</strong> — JUJUR, AKUNTABEL, ANTI "ASAL LULUS".</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>NIMBLE</strong> — RESPONSIF TERHADAP TREN (EV, CNC, IOT, KREATIF DIGITAL).</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>DELIVERY</strong> — OUTCOME-BASED: PORTOFOLIO, SERTIFIKAT, PEKERJAAN.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>UNITY</strong> — KOLABORASI DUDI–PEMERINTAH–KOMUNITAS–ALUMNI.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>SAFETY</strong> — K3 JADI MINDSET, BUKAN FORMALITAS.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>TOP-NOTCH TOOLS</strong> — PERALATAN & SOP SELEVEL INDUSTRI.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>RESPECT</strong> — INKLUSIF, RAMAH PEMULA & PENYANDANG DISABILITAS RINGAN.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-slate-600 rounded-full mt-2 flex-shrink-0"></span>
-                <span><strong>IMPACT</strong> — DAMPAK SOSIAL-EKONOMI NYATA BAGI KELUARGA & DAERAH.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
         {/* Values Details Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {coreValues.map((value, index) => (
