@@ -89,8 +89,8 @@ icon: Diamond,
             <div className="absolute -top-6 -left-6 w-16 h-16 bg-emerald-200 dark:bg-emerald-800 rounded-full opacity-60"></div>
             <div className="absolute -bottom-3 -right-3 w-8 h-8 bg-amber-300 dark:bg-amber-600 rounded-full opacity-80"></div>
             <img 
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Team meeting" 
+              src="@assets/unnamed (4)_1755321002006.webp" 
+              alt="BBPVP Training Session" 
               className="relative rounded-2xl shadow-lg w-full h-auto transform hover:scale-105 hover:rotate-1 transition-all duration-500 border-4 border-white dark:border-gray-700"
             />
             <div className="absolute top-4 right-4 w-4 h-4 bg-red-400 rounded-full animate-pulse"></div>

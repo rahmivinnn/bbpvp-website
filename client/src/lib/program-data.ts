@@ -14,7 +14,7 @@ export const programData: Record<number, ProgramData> = {
   1: {
     id: 1,
     title: 'Pelatihan Berbasis Kompetensi (PBK)',
-    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300',
+    image: '@assets/unnamed (4)_1755321002006.webp',
     category: 'Pelatihan',
     categoryColor: 'bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400',
     icon: 'fas fa-graduation-cap',
@@ -36,7 +36,7 @@ export const programData: Record<number, ProgramData> = {
   2: {
     id: 2,
     title: 'Bidang Keahlian Otomotif',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300',
+    image: '@assets/unnamed (3)_1755321002006.webp',
     category: 'Otomotif',
     categoryColor: 'bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-400',
     icon: 'fas fa-car',
@@ -59,7 +59,7 @@ export const programData: Record<number, ProgramData> = {
   3: {
     id: 3,
     title: 'Bidang Keahlian Manufaktur',
-    image: 'https://images.unsplash.com/photo-1515169067868-5387ec356754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300',
+    image: '@assets/unnamed (3)_1755321002006.webp',
     category: 'Manufaktur',
     categoryColor: 'bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400',
     icon: 'fas fa-industry',
@@ -82,7 +82,7 @@ export const programData: Record<number, ProgramData> = {
   4: {
     id: 4,
     title: 'Bidang Keahlian Refrigerasi',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300',
+    image: '@assets/unnamed (2)_1755321002006.webp',
     category: 'Refrigerasi',
     categoryColor: 'bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400',
     icon: 'fas fa-snowflake',
@@ -104,7 +104,7 @@ export const programData: Record<number, ProgramData> = {
   5: {
     id: 5,
     title: 'Bidang Keahlian TIK & Kreatif',
-    image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300',
+    image: '@assets/unnamed (4)_1755321002006.webp',
     category: 'TIK',
     categoryColor: 'bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-400',
     icon: 'fas fa-laptop-code',
@@ -126,7 +126,7 @@ export const programData: Record<number, ProgramData> = {
   6: {
     id: 6,
     title: 'Sertifikasi Profesi (BNSP)',
-    image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300',
+    image: '@assets/unnamed (2)_1755321002006.webp',
     category: 'Sertifikasi',
     categoryColor: 'bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-400',
     icon: 'fas fa-certificate',
@@ -148,7 +148,7 @@ export const programData: Record<number, ProgramData> = {
   7: {
     id: 7,
     title: 'Job Matching & Job Fair',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300',
+    image: '@assets/unnamed (3)_1755321002006.webp',
     category: 'Karier',
     categoryColor: 'bg-teal-100 dark:bg-teal-900 text-teal-600 dark:text-teal-400',
     icon: 'fas fa-handshake',
@@ -170,7 +170,7 @@ export const programData: Record<number, ProgramData> = {
   8: {
     id: 8,
     title: 'Kelas Kolaborasi DUDI',
-    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300',
+    image: '@assets/unnamed (4)_1755321002006.webp',
     category: 'Kolaborasi',
     categoryColor: 'bg-pink-100 dark:bg-pink-900 text-pink-600 dark:text-pink-400',
     icon: 'fas fa-users',
@@ -192,7 +192,7 @@ export const programData: Record<number, ProgramData> = {
   9: {
     id: 9,
     title: 'Inkubasi & Showcase',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300',
+    image: '@assets/unnamed (6)_1755321001978.webp',
     category: 'Wirausaha',
     categoryColor: 'bg-cyan-100 dark:bg-cyan-900 text-cyan-600 dark:text-cyan-400',
     icon: 'fas fa-lightbulb',
@@ -214,7 +214,7 @@ export const programData: Record<number, ProgramData> = {
   10: {
     id: 10,
     title: 'PBL (Project Based Learning)',
-    image: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300',
+    image: '@assets/unnamed (2)_1755321002006.webp',
     category: 'Metodologi',
     categoryColor: 'bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-400',
     icon: 'fas fa-project-diagram',
@@ -240,42 +240,42 @@ export const galleryData = [
     id: 1,
     title: 'Kegiatan TIK Desain Grafis',
     description: 'Pelatihan desain grafis cetak & media sosial',
-    image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400',
+    image: '@assets/unnamed (4)_1755321002006.webp',
     category: 'pelatihan'
   },
   {
     id: 2,
     title: 'Operator Forklift',
     description: 'Pelatihan operator forklift berstandar industri',
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400',
+    image: '@assets/unnamed (3)_1755321002006.webp',
     category: 'workshop'
   },
   {
     id: 3,
     title: 'Smart Tourism',
     description: 'Program pelatihan smart tourism dan pariwisata digital',
-    image: 'https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400',
+    image: '@assets/unnamed (1)_1755321002007.webp',
     category: 'seminar'
   },
   {
     id: 4,
     title: 'Workshop Berstandar Industri',
     description: 'Fasilitas modern untuk pembelajaran praktik',
-    image: 'https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400',
+    image: '@assets/unnamed (5)_1755321002005.webp',
     category: 'fasilitas'
   },
   {
     id: 5,
     title: 'Lab Komputer & TIK',
     description: 'Laboratorium komputer dengan teknologi terkini',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400',
+    image: '@assets/unnamed (2)_1755321002006.webp',
     category: 'pelatihan'
   },
   {
     id: 6,
     title: 'Boarding & Non-Boarding',
     description: 'Fasilitas asrama dan kafetaria untuk peserta',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400',
+    image: '@assets/unnamed (6)_1755321001978.webp',
     category: 'fasilitas'
   },
   {
@@ -289,7 +289,7 @@ export const galleryData = [
     id: 8,
     title: 'Aula Event & Job Fair',
     description: 'Fasilitas untuk event besar dan job fair',
-    image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400',
+    image: '@assets/2025-07-03 (2)_1755321002006.webp',
     category: 'seminar'
   }
 ];
