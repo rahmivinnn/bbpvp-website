@@ -15,19 +15,19 @@ export function ContactSection() {
     {
       icon: MapPin,
       title: 'Alamat',
-      content: 'Jl. Soekarno-Hatta No.456\nBandung, Jawa Barat 40285',
+      content: 'Jl. Jenderal Gatot Subroto No. 170\nBandung (depan Trans Studio Mall)',
       bgColor: 'bg-primary'
     },
     {
       icon: Phone,
       title: 'Telepon',
-      content: '(022) 7566056\n+62 856-5928-0995',
+      content: '(022) 7312564',
       bgColor: 'bg-green-500'
     },
     {
       icon: Mail,
-      title: 'Email',
-      content: 'info@bbpvpbandung.kemnaker.go.id',
+      title: 'Email & Website',
+      content: 'hello@reallygreatsite.com\nbbpvpbandung.kemnaker.go.id\nlinktr.ee/bbpvp_bandung',
       bgColor: 'bg-orange-500'
     }
   ];

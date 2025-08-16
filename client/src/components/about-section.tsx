@@ -12,19 +12,19 @@ export function AboutSection() {
     {
       icon: '🎯',
       title: 'Visi Kami',
-      content: 'Menjadi pusat pelatihan vokasi terkemuka yang menghasilkan tenaga kerja kompeten dan produktif untuk mendukung pembangunan nasional.',
+      content: 'Menjadi pusat unggulan vokasi dan produktivitas yang adaptif, inklusif, dan berjejaring—melahirkan talenta kompeten yang terserap industri atau mandiri berwirausaha.',
       gradient: 'from-blue-500 to-purple-600'
     },
     {
       icon: '⚡',
       title: 'Misi Kami',
-      content: 'Menyelenggarakan pelatihan vokasi berkualitas, mengembangkan kompetensi SDM, dan membangun kemitraan strategis dengan industri.',
+      content: '1. Menyelenggarakan PBK berstandar industri dengan porsi praktik dominan\n2. Memperkuat ekosistem sertifikasi & TUK agar pengakuan kompetensi merata\n3. Mendorong kemitraan strategis DUDI–kampus–komunitas untuk desain kurikulum agile\n4. Meningkatkan produktivitas melalui budaya K3, 5R/5S, lean, dan digitalisasi proses\n5. Menggerakkan job matching yang efektif melalui career service & job fair kurasi',
       gradient: 'from-purple-500 to-pink-600'
     },
     {
       icon: '💎',
-      title: 'Nilai Kami',
-      content: 'Profesionalisme, inovasi, integritas, dan komitmen dalam memberikan layanan pelatihan terbaik untuk kemajuan bangsa.',
+      title: 'Core Values INDUSTRY',
+      content: 'INTEGRITY - Jujur, akuntabel, anti "asal lulus"\nNIMBLE - Responsif terhadap tren (EV, CNC, IoT, kreatif digital)\nDELIVERY - Outcome-based: portofolio, sertifikat, pekerjaan\nUNITY - Kolaborasi DUDI–pemerintah–komunitas–alumni\nSAFETY - K3 jadi mindset, bukan formalitas\nTOP-NOTCH TOOLS - Peralatan & SOP selevel industri\nRESPECT - Inklusif, ramah pemula & penyandang disabilitas ringan\nIMPACT - Dampak sosial-ekonomi nyata bagi keluarga & daerah',
       gradient: 'from-orange-500 to-red-600'
     }
   ];
@@ -52,11 +52,10 @@ export function AboutSection() {
                 Sejarah & Komitmen Kami
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                BBPVP Bandung adalah institusi pelatihan vokasi terkemuka yang telah berdedikasi dalam mengembangkan 
-                sumber daya manusia Indonesia sejak didirikan. 
+                BBPVP Bandung adalah UPT pusat Kementerian Ketenagakerjaan RI yang fokus mengubah potensi jadi kompetensi lewat pelatihan vokasi berbasis kompetensi (PBK), sertifikasi profesi, dan link-and-match dengan industri.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                Kami berkomitmen untuk memberikan pelatihan berkualitas tinggi yang sesuai dengan kebutuhan industri modern.
+                Berlokasi strategis di Jl. Jenderal Gatot Subroto No. 170, Bandung, BBPVP Bandung melayani talenta muda, pencari kerja, hingga pekerja industri yang ingin upskill/reskill—dari otomotif, manufaktur, refrigerasi & tata udara, sampai teknologi informasi dan komunikasi.
               </p>
             </div>
             
