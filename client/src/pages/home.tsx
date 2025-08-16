@@ -4,6 +4,7 @@ import { HeroSection } from '../components/hero-section';
 import { StatsSection } from '../components/stats-section';
 import { AboutSection } from '../components/about-section';
 import { ProgramsSection } from '../components/programs-section';
+import { ArticlesSection } from '../components/articles-section';
 import { GallerySection } from '../components/gallery-section';
 import { ContactSection } from '../components/contact-section';
 import { FacilitiesSection } from '../components/facilities-section';
@@ -53,6 +54,7 @@ export default function Home() {
         <FacilitiesSection />
         <ServiceFlowSection />
         <TrainingCatalogSection />
+        <ArticlesSection />
         <GallerySection />
         <ContactSection />
       </main>

@@ -12,6 +12,7 @@ export function Navigation() {
     { href: '#home', label: 'Beranda' },
     { href: '#about', label: 'Tentang' },
     { href: '#programs', label: 'Program' },
+    { href: '#articles', label: 'Artikel' },
     { href: '#gallery', label: 'Galeri' },
     { href: '#contact', label: 'Kontak' }
   ];
