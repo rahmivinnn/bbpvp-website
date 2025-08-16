@@ -56,7 +56,7 @@ export function StatsSection() {
             const bgColors = ['bg-emerald-100/60', 'bg-amber-100/60', 'bg-red-100/60', 'bg-blue-100/60'];
             return (
               <div key={index} className="stat-item text-center group">
-                <div className={`natural-card p-6 ${bgColors[index]} dark:bg-gray-800`} style={{transform: `rotate(${(index % 2 === 0 ? 1 : -1) * (index + 1) * 0.8}deg)`}}>
+                <div className={`natural-card p-6 ${bgColors[index]} dark:bg-gray-800`}>
                   <div 
                     className={`text-4xl md:text-5xl font-bold ${colors[index]} mb-2 counter heading-font`} 
                     data-target={stat.value}

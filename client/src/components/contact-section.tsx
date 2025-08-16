@@ -93,12 +93,12 @@ export function ContactSection() {
     <section id="contact" className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 rounded-full text-sm font-medium mb-6 border border-orange-200 dark:border-orange-800" style={{transform: 'rotate(0.8deg)'}}>
+          <div className="inline-block px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 rounded-full text-sm font-medium mb-6 border border-orange-200 dark:border-orange-800">
             Hubungi Kami 📞
           </div>
           <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
-            <span style={{transform: 'rotate(-0.3deg)', display: 'inline-block'}}>Mari</span>
-            <span className="text-gradient" style={{transform: 'rotate(1.2deg)', display: 'inline-block', marginLeft: '1rem'}}> Berkolaborasi</span>
+            <span>Mari</span>
+            <span className="text-gradient" style={{marginLeft: '1rem'}}> Berkolaborasi</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed" style={{marginLeft: '0.5rem'}}>
             Dapatkan informasi lebih lanjut tentang <br/>program pelatihan dan layanan kami
@@ -109,9 +109,9 @@ export function ContactSection() {
           {/* Contact Info */}
           <div className="lg:col-span-1 space-y-6">
             {contactInfo.map((info, index) => (
-              <div key={index} className="contact-item natural-card p-6 group" style={{transform: `rotate(${(index % 2 === 0 ? 1 : -1) * (index + 1) * 0.6}deg)`}}>
+              <div key={index} className="contact-item natural-card p-6 group">
                 <div className="flex items-start space-x-4">
-                  <div className={`w-14 h-14 ${info.bgColor} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300`} style={{transform: 'rotate(-5deg)'}}>
+                  <div className={`w-14 h-14 ${info.bgColor} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300`}>
                     <info.icon className="w-7 h-7 text-white" />
                   </div>
                   <div className="flex-1">
@@ -133,13 +133,12 @@ export function ContactSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="service-link flex items-center space-x-3 p-4 natural-card group"
-                    style={{transform: `rotate(${(index % 2 === 0 ? 1 : -1) * 0.4}deg)`}}
                   >
-                    <div className="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300" style={{transform: 'rotate(-3deg)'}}>
+                    <div className="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300">
                       <service.icon className={`w-5 h-5 ${service.color}`} />
                     </div>
                     <span className="text-gray-700 dark:text-gray-300 font-medium flex-1">{service.title}</span>
-                    <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-emerald-600 group-hover:rotate-12 transition-all duration-300" />
+                    <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-emerald-600 transition-all duration-300" />
                   </a>
                 ))}
               </div>
@@ -150,7 +149,7 @@ export function ContactSection() {
           <div className="lg:col-span-2">
             <div className="natural-card p-8">
               <div className="flex items-center space-x-4 mb-8">
-                <div className="w-14 h-14 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl flex items-center justify-center" style={{transform: 'rotate(-8deg)'}}>
+                <div className="w-14 h-14 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl flex items-center justify-center">
                   <Mail className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="heading-font text-3xl font-bold text-gray-900 dark:text-white">Kirim Pesan</h3>
@@ -216,7 +215,7 @@ export function ContactSection() {
                 </div>
                 <button 
                   type="submit" 
-                  className="w-full px-8 py-4 text-lg font-semibold bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white rounded-xl transform hover:scale-105 hover:rotate-1 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3"
+                  className="w-full px-8 py-4 text-lg font-semibold bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white rounded-xl transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3"
                 >
                   <Mail className="w-5 h-5" />
                   Kirim Pesan Sekarang

@@ -9,12 +9,12 @@ export function ProgramsSection() {
     <section id="programs" className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-2 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-full text-sm font-medium mb-6 border border-amber-200 dark:border-amber-800" style={{transform: 'rotate(1deg)'}}>
+          <div className="inline-block px-4 py-2 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-full text-sm font-medium mb-6 border border-amber-200 dark:border-amber-800">
             Program Kami 📚
           </div>
           <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
-            <span style={{transform: 'rotate(-1deg)', display: 'inline-block'}}>Program</span>
-            <span className="text-gradient" style={{transform: 'rotate(0.5deg)', display: 'inline-block', marginLeft: '1rem'}}> Unggulan</span>
+            <span>Program</span>
+            <span className="text-gradient" style={{marginLeft: '1rem'}}> Unggulan</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed" style={{marginLeft: '1.5rem'}}>
             Berbagai program pelatihan vokasi yang dirancang <br/>untuk meningkatkan kompetensi dan produktivitas
@@ -27,7 +27,6 @@ export function ProgramsSection() {
               key={program.id}
               className="program-card natural-card overflow-hidden group cursor-pointer"
               onClick={() => setSelectedProgram(program.id)}
-              style={{transform: `rotate(${(index % 2 === 0 ? 1 : -1) * ((index % 4) + 1) * 0.4}deg)`}}
             >
               <div className="relative overflow-hidden">
                 <img 
@@ -37,7 +36,7 @@ export function ProgramsSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute top-3 right-3">
-                  <div className="w-9 h-9 bg-white/95 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-sm" style={{transform: 'rotate(-8deg)'}}>
+                  <div className="w-9 h-9 bg-white/95 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-sm">
                     <i className={`${program.icon} ${program.iconColor} text-base`}></i>
                   </div>
                 </div>
@@ -50,7 +49,7 @@ export function ProgramsSection() {
               
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <span className={`${program.categoryColor} px-3 py-1 rounded-xl text-xs font-medium tracking-wide`} style={{transform: 'rotate(-1deg)'}}>
+                  <span className={`${program.categoryColor} px-3 py-1 rounded-xl text-xs font-medium tracking-wide`}>
                     {program.category}
                   </span>
                   <div className="w-6 h-6 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
@@ -69,7 +68,7 @@ export function ProgramsSection() {
                 <div className="pt-4 border-t border-gray-100 dark:border-gray-700">
                   <div className="flex items-center text-emerald-700 dark:text-emerald-400 text-sm font-medium group-hover:translate-x-2 transition-transform duration-300">
                     Pelajari Lebih Lanjut
-                    <svg className="w-4 h-4 ml-2 transform group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>

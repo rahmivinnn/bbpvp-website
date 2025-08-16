@@ -28,7 +28,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18">
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center shadow-md" style={{transform: 'rotate(-3deg)'}}>
+            <div className="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center shadow-md">
               <img 
                 src="https://bbpvpbandung.kemnaker.go.id/uploads/d9810d73cd90a7c974c2e79856d80cc3.png" 
                 alt="BBPVP Bandung Logo" 
@@ -47,7 +47,6 @@ export function Navigation() {
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
                 className="px-4 py-2 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 transition-all duration-200 transform hover:scale-105"
-                style={{transform: `rotate(${(index % 2 === 0 ? 1 : -1) * 0.5}deg)`}}
               >
                 {link.label}
               </button>
@@ -57,7 +56,7 @@ export function Navigation() {
           <div className="flex items-center space-x-3">
             <button
               onClick={toggleDark}
-              className="w-11 h-11 rounded-xl bg-amber-100 dark:bg-amber-900/30 hover:bg-amber-200 dark:hover:bg-amber-800/40 transition-all duration-200 flex items-center justify-center transform hover:rotate-12 hover:scale-110"
+              className="w-11 h-11 rounded-xl bg-amber-100 dark:bg-amber-900/30 hover:bg-amber-200 dark:hover:bg-amber-800/40 transition-all duration-200 flex items-center justify-center transform hover:scale-110"
             >
               {isDark ? <Sun className="w-5 h-5 text-amber-600" /> : <Moon className="w-5 h-5 text-amber-700" />}
             </button>

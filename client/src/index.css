@@ -134,7 +134,7 @@
 
   .natural-card:hover {
     box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px) rotate(0.5deg);
+    transform: translateY(-4px);
   }
 
   .modern-button {
@@ -188,10 +188,10 @@
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(-1deg); }
-    25% { transform: translateY(-8px) rotate(0.5deg); }
-    50% { transform: translateY(-15px) rotate(1deg); }
-    75% { transform: translateY(-3px) rotate(-0.5deg); }
+    0%, 100% { transform: translateY(0px); }
+    25% { transform: translateY(-8px); }
+    50% { transform: translateY(-15px); }
+    75% { transform: translateY(-3px); }
   }
 
   @keyframes fadeIn {

@@ -23,12 +23,12 @@ export function GallerySection() {
     <section id="gallery" className="py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-2 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-400 rounded-full text-sm font-medium mb-6 border border-teal-200 dark:border-teal-800" style={{transform: 'rotate(-0.5deg)'}}>
+          <div className="inline-block px-4 py-2 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-400 rounded-full text-sm font-medium mb-6 border border-teal-200 dark:border-teal-800">
             Galeri Kami 📸
           </div>
           <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
-            <span style={{transform: 'rotate(0.8deg)', display: 'inline-block'}}>Galeri</span>
-            <span className="text-gradient" style={{transform: 'rotate(-0.3deg)', display: 'inline-block', marginLeft: '1rem'}}> Kegiatan</span>
+            <span>Galeri</span>
+            <span className="text-gradient" style={{marginLeft: '1rem'}}> Kegiatan</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed" style={{marginRight: '1rem'}}>
             Dokumentasi kegiatan dan pencapaian BBPVP Bandung <br/>dalam mengembangkan SDM Indonesia
@@ -46,7 +46,7 @@ export function GallerySection() {
                   ? 'bg-emerald-600 text-white shadow-lg border-2 border-emerald-400'
                   : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 shadow-sm border border-gray-200 dark:border-gray-600 hover:shadow-md'
               }`}
-              style={{transform: `rotate(${(index % 2 === 0 ? 1 : -1) * 0.5}deg) ${activeFilter === filter.key ? 'scale(1.05)' : ''}`}}
+              style={{transform: activeFilter === filter.key ? 'scale(1.05)' : ''}}
             >
               {filter.key === 'all' && <Filter className="w-4 h-4" />}
               {filter.label}
@@ -61,7 +61,6 @@ export function GallerySection() {
               key={item.id}
               className="gallery-item group cursor-pointer overflow-hidden rounded-2xl natural-card transition-all duration-500"
               onClick={() => setSelectedImage(item)}
-              style={{transform: `rotate(${(index % 3 === 0 ? 1 : index % 3 === 1 ? -1 : 0) * ((index % 5) + 1) * 0.3}deg)`}}
             >
               <div className="relative overflow-hidden">
                 <img 
@@ -76,12 +75,12 @@ export function GallerySection() {
                   </div>
                 </div>
                 <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-8 h-8 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center shadow-sm" style={{transform: 'rotate(-10deg)'}}>
+                  <div className="w-8 h-8 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center shadow-sm">
                     <Camera className="w-4 h-4 text-gray-800" />
                   </div>
                 </div>
                 <div className="absolute top-3 left-3">
-                  <span className="px-2 py-1 bg-emerald-500/95 backdrop-blur-sm text-white text-xs rounded-lg font-medium" style={{transform: 'rotate(3deg)'}}>
+                  <span className="px-2 py-1 bg-emerald-500/95 backdrop-blur-sm text-white text-xs rounded-lg font-medium">
                     #{String(index + 1).padStart(2, '0')}
                   </span>
                 </div>

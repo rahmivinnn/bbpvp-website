@@ -41,7 +41,7 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl flex items-center justify-center shadow-lg" style={{transform: 'rotate(-5deg)'}}>
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl flex items-center justify-center shadow-lg">
                 <img 
                   src="https://bbpvpbandung.kemnaker.go.id/uploads/d9810d73cd90a7c974c2e79856d80cc3.png" 
                   alt="BBPVP Bandung" 
@@ -62,8 +62,7 @@ export function Footer() {
                 <a 
                   key={index}
                   href={social.href} 
-                  className="w-12 h-12 bg-gray-800 rounded-2xl flex items-center justify-center hover:bg-gradient-to-br hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-110 hover:rotate-12"
-                  style={{transform: `rotate(${(index % 2 === 0 ? 1 : -1) * (index + 1) * 2}deg)`}}
+                  className="w-12 h-12 bg-gray-800 rounded-2xl flex items-center justify-center hover:bg-gradient-to-br hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-110"
                 >
                   <i className={`${social.icon} text-lg`}></i>
                 </a>

@@ -44,12 +44,12 @@ export function HeroSection() {
         {/* Natural icon */}
         <div className="mb-16 flex justify-center">
           <div className="relative">
-            <div style={{transform: 'rotate(-3deg)'}} className="w-28 h-28 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-2xl flex items-center justify-center shadow-xl">
+            <div className="w-28 h-28 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-2xl flex items-center justify-center shadow-xl">
               <svg className="w-14 h-14 text-emerald-100" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
               </svg>
             </div>
-            <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-amber-400 rounded-full" style={{transform: 'rotate(15deg)'}}></div>
+            <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-amber-400 rounded-full"></div>
             <div className="absolute -top-1 -left-2 w-3 h-3 bg-red-400 rounded-full animate-pulse"></div>
           </div>
         </div>
@@ -62,9 +62,9 @@ export function HeroSection() {
               </span>
             </div>
             <h1 className="heading-font text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 dark:text-white mb-8 leading-[0.9]">
-              <span className="block" style={{transform: 'rotate(-1deg)', display: 'inline-block'}}>Balai Besar</span>
-              <span className="block text-gradient" style={{transform: 'rotate(0.5deg)', display: 'inline-block', marginLeft: '1rem'}}>Pelatihan Vokasi</span>
-              <span className="block" style={{transform: 'rotate(-0.5deg)', display: 'inline-block'}}>& Produktivitas</span>
+              <span className="block">Balai Besar</span>
+              <span className="block text-gradient" style={{marginLeft: '1rem'}}>Pelatihan Vokasi</span>
+              <span className="block">& Produktivitas</span>
             </h1>
           </div>
 
@@ -76,14 +76,14 @@ export function HeroSection() {
           <div className="hero-buttons flex flex-col sm:flex-row gap-6 justify-center" style={{marginLeft: '1rem'}}>
             <button 
               onClick={() => scrollToSection('#programs')}
-              className="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 text-lg font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:rotate-1 flex items-center justify-center gap-3"
+              className="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 text-lg font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3"
             >
               <Play className="w-5 h-5" />
               Jelajahi Program Kami
             </button>
             <button 
               onClick={() => scrollToSection('#about')}
-              className="bg-white border-2 border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400 px-8 py-4 text-lg font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-rotate-1 flex items-center justify-center gap-3"
+              className="bg-white border-2 border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400 px-8 py-4 text-lg font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3"
             >
               Tentang Kami
             </button>
@@ -92,19 +92,19 @@ export function HeroSection() {
 
         {/* Stats preview */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 pt-16">
-          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm" style={{transform: 'rotate(-1deg)'}}>
+          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm">
             <div className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">15+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Tahun Pengalaman</div>
           </div>
-          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm" style={{transform: 'rotate(1deg)'}}>
+          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm">
             <div className="text-3xl font-bold text-amber-600 dark:text-amber-400">60+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Kelas Tersedia</div>
           </div>
-          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm" style={{transform: 'rotate(-0.5deg)'}}>
+          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm">
             <div className="text-3xl font-bold text-red-600 dark:text-red-400">900+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Alumni Sukses</div>
           </div>
-          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm" style={{transform: 'rotate(0.5deg)'}}>
+          <div className="text-center p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm">
             <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">10+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Program Unggulan</div>
           </div>
