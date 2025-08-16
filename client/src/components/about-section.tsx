@@ -2,10 +2,12 @@ import { Check } from 'lucide-react';
 
 export function AboutSection() {
   const features = [
-    'Pelatihan berkualitas tinggi dengan standar internasional',
+    'Pelatihan berbasis kompetensi (PBK) berstandar industri',
+    'PBL (Project Based Learning) dengan proyek riil',
     'Instruktur berpengalaman dan bersertifikat',
-    'Fasilitas modern dan lengkap',
-    'Kurikulum yang selalu update sesuai industri'
+    'Fasilitas workshop berstandar industri',
+    'Sertifikasi profesi BNSP yang diakui',
+    'Job matching dan career service'
   ];
 
   const values = [
@@ -57,6 +59,16 @@ export function AboutSection() {
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
                 Berlokasi strategis di Jl. Jenderal Gatot Subroto No. 170, Bandung, BBPVP Bandung melayani talenta muda, pencari kerja, hingga pekerja industri yang ingin upskill/reskill—dari otomotif, manufaktur, refrigerasi & tata udara, sampai teknologi informasi dan komunikasi.
               </p>
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-6 rounded-2xl mb-6">
+                <h4 className="heading-font text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                  <span className="text-2xl">🎯</span> PBL (Project Based Learning)
+                </h4>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Metodologi pembelajaran berbasis proyek dengan <strong>real project dari industri</strong>, 
+                  problem-based learning approach, dan collaborative team work untuk menghasilkan 
+                  <strong>portofolio nyata</strong> dan kompetensi problem solving yang teruji.
+                </p>
+              </div>
             </div>
             
             <div className="grid sm:grid-cols-2 gap-4">
