@@ -48,20 +48,20 @@ export function StatsSection() {
   }, []);
 
   return (
-    <section className="py-20 bg-blue-700 dark:bg-blue-800 transition-colors duration-300">
+    <section className="py-16 bg-slate-800 dark:bg-slate-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-12">
           <h2 className="heading-font text-4xl md:text-5xl font-bold text-white mb-4">
             Lulusan dan Kelas
           </h2>
-          <p className="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto">
             BBPVP Bandung menghasilkan banyak alumni dan pekerja sukses.
           </p>
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" ref={statsRef}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12" ref={statsRef}>
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
@@ -81,7 +81,7 @@ export function StatsSection() {
                   </div>
                   
                   {/* Label */}
-                  <div className="text-blue-100 font-semibold text-xl">
+                  <div className="text-slate-300 font-semibold text-xl">
                     {stat.label}
                   </div>
                 </div>
