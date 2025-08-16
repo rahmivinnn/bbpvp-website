@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote, Star, User } from 'lucide-react';
 import duranPhoto from '@assets/WhatsApp Image 2025-08-16 at 4.24.45 PM_1755336457076.jpeg';
+import duranChristianPhoto from '@assets/WhatsApp Image 2025-08-16 at 4.26.30 PM_1755336694383.jpeg';
 
 export function TestimonialsSection() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -32,15 +33,15 @@ export function TestimonialsSection() {
     },
     {
       id: 3,
-      name: 'Budi Setiawan',
-      age: 28,
-      program: 'Manufaktur - CNC & Welding',
-      company: 'PT. Krakatau Steel',
-      position: 'Operator CNC Level III',
-      photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+      name: 'Duran Christian',
+      age: 27,
+      program: 'Refrigerasi & Tata Udara',
+      company: 'PT. Cooling Solution Indonesia',
+      position: 'Teknisi AC Senior',
+      photo: duranChristianPhoto,
       rating: 5,
-      testimonial: 'Saya sudah bekerja di manufaktur 5 tahun, tapi skill saya terbatas. Setelah ikut pelatihan CNC di BBPVP Bandung, karir saya naik drastis. Fasilitas workshop-nya benar-benar berstandar industri, tidak kalah dengan tempat kerja saya. Sekarang saya sudah jadi operator level III dan sedang dipertimbangkan untuk promosi supervisor. Investasi terbaik untuk karir saya!',
-      year: '2023'
+      testimonial: 'Pelatihan di BBPVP bukan hanya mengubah karir saya, tapi juga mengubah hidup saya secara spiritual. Saya yang dulu beragama Kristen, merasakan hawa nuansa islami yang begitu kental di sini. Mulai dari adzan yang berkumandang, sholat berjamaah yang khidmat, hingga akhlak mulia para instruktur dan teman-teman. Lingkungan yang penuh berkah ini membuat hati saya tergerak untuk mempelajari Islam lebih dalam. Alhamdulillah, saya akhirnya memutuskan untuk masuk Islam. BBPVP tidak hanya memberikan saya skill AC dan refrigerasi, tapi juga membimbing saya menemukan jalan yang benar. Sekarang saya bekerja dengan skill yang mumpuni dan hati yang tenang karena telah menemukan hidayah.',
+      year: '2024'
     }
   ];
 
