@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote, Star, User } from 'lucide-react';
-import duranPhoto from '@assets/WhatsApp Image 2025-08-16 at 4.24.17 PM_1755336322678.jpeg';
+import duranPhoto from '@assets/WhatsApp Image 2025-08-16 at 4.24.45 PM_1755336457076.jpeg';
 
 export function TestimonialsSection() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -20,14 +20,14 @@ export function TestimonialsSection() {
     },
     {
       id: 2,
-      name: 'Muhammad Duran',
-      age: 25,
-      program: 'Manufaktur - CNC & Welding',
-      company: 'PT. Industri Jaya Makmur',
-      position: 'Operator CNC Ahli',
+      name: 'Duran Assegaf',
+      age: 26,
+      program: 'TIK & Kreatif Digital',
+      company: 'PT. Media Teknologi Indonesia',
+      position: 'Web Developer',
       photo: duranPhoto,
       rating: 5,
-      testimonial: 'Dulu saya cuma bisa bikin kopi dan mie instan, sekarang bisa bikin komponen mesin! 😄 Awalnya takut sama mesin CNC yang gede-gede, ternyata lebih jinak dari kucing tetangga. Instruktur di BBPVP sabar banget ngajarin, bahkan waktu saya salah program sampai mesin bunyi aneh kayak robot ngambek. Sekarang gaji saya udah bisa beli motor kredit, dan yang penting, emak udah bangga karena anaknya bisa jadi "tukang mesin pintar" katanya. Makasih BBPVP, dari yang dulu cuma bisa ngoprek HP sekarang bisa ngoprek mesin!',
+      testimonial: 'Setelah saya mengikuti pelatihan di BBPVP Bandung, bukan hanya ilmu yang saya dapat, tetapi nuansa islamnya kerasa banget. Lingkungan yang kondusif untuk beribadah, fasilitas masjid yang nyaman, dan teman-teman yang saling mengingatkan dalam kebaikan. Instruktur tidak hanya mengajar skill teknis, tapi juga menanamkan nilai-nilai islami dalam bekerja seperti kejujuran, amanah, dan etos kerja yang baik. Alhamdulillah, sekarang saya bekerja dengan skill yang mumpuni dan akhlak yang lebih baik. BBPVP bukan hanya tempat belajar, tapi juga tempat tumbuh sebagai muslim yang lebih baik.',
       year: '2024'
     },
     {
