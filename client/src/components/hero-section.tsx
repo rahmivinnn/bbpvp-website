@@ -43,7 +43,7 @@ export function HeroSection() {
 
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         {/* Logo */}
-        <div className="mb-20 flex justify-center">
+        <div className="mb-8 flex justify-center">
           <div className="relative">
             <div className="w-40 h-40 rounded-2xl flex items-center justify-center shadow-xl bg-white/80 backdrop-blur-sm">
               <img 
@@ -57,7 +57,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-8 mt-16">
           <div className="hero-title">
             <div className="inline-block mb-6">
               <span className="text-sm font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-4 py-2 rounded-full border border-emerald-200 dark:border-emerald-800">
