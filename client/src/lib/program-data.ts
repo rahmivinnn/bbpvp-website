@@ -17,6 +17,10 @@ import whatsapp9 from '@assets/WhatsApp Image 2025-08-16 at 11.06.39 AM (1)_1755
 import whatsapp10 from '@assets/WhatsApp Image 2025-08-16 at 11.06.39 AM_1755322269131.jpeg';
 import whatsapp11 from '@assets/WhatsApp Image 2025-08-16 at 11.06.38 AM_1755322269132.jpeg';
 import whatsapp12 from '@assets/WhatsApp Image 2025-08-16 at 11.03.54 AM (1)_1755322269132.jpeg';
+import newPhoto1 from '@assets/WhatsApp Image 2025-08-16 at 4.35.34 PM (1)_1755337033068.jpeg';
+import newPhoto2 from '@assets/WhatsApp Image 2025-08-16 at 4.35.34 PM_1755337033080.jpeg';
+import newPhoto3 from '@assets/WhatsApp Image 2025-08-16 at 4.35.33 PM (1)_1755337033081.jpeg';
+import newPhoto4 from '@assets/WhatsApp Image 2025-08-16 at 4.35.33 PM_1755337033081.jpeg';
 
 export interface ProgramData {
   id: number;
@@ -395,5 +399,33 @@ export const galleryData = [
     description: 'Berbagai fasilitas penunjang kegiatan pelatihan',
     image: whatsapp12,
     category: 'fasilitas'
+  },
+  {
+    id: 21,
+    title: 'Kegiatan Pelatihan Industri',
+    description: 'Kegiatan pelatihan praktik industri di BBPVP Bandung',
+    image: newPhoto1,
+    category: 'pelatihan'
+  },
+  {
+    id: 22,
+    title: 'Workshop Teknologi Terkini',
+    description: 'Workshop menggunakan teknologi dan peralatan terkini',
+    image: newPhoto2,
+    category: 'workshop'
+  },
+  {
+    id: 23,
+    title: 'Sesi Pembelajaran Praktik',
+    description: 'Suasana pembelajaran praktik peserta pelatihan',
+    image: newPhoto3,
+    category: 'pelatihan'
+  },
+  {
+    id: 24,
+    title: 'Aktivitas Pelatihan Vokasi',
+    description: 'Aktivitas harian pelatihan vokasi di BBPVP Bandung',
+    image: newPhoto4,
+    category: 'pelatihan'
   }
 ];
