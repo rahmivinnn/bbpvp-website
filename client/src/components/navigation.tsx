@@ -29,11 +29,11 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18">
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center shadow-md">
+            <div className="w-16 h-16 rounded-xl flex items-center justify-center shadow-md">
               <img 
                 src={logoImage} 
                 alt="BBPVP Bandung Logo" 
-                className="h-8 w-8 object-contain"
+                className="h-12 w-12 object-contain"
               />
             </div>
             <div>

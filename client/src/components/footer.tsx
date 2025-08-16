@@ -42,11 +42,11 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl flex items-center justify-center shadow-lg">
+              <div className="w-20 h-20 rounded-2xl flex items-center justify-center shadow-lg">
                 <img 
                   src={logoImage} 
                   alt="BBPVP Bandung" 
-                  className="h-10 w-10 object-contain"
+                  className="h-16 w-16 object-contain"
                 />
               </div>
               <div>
