@@ -47,14 +47,14 @@ export function HeroSection() {
                 Kementerian Ketenagakerjaan RI 🇮🇩
               </span>
             </div>
-            <h1 className="heading-font text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 dark:text-white mb-8 leading-[0.9]">
+            <h1 className="heading-font text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-[0.9]">
               <span className="block">Balai Besar</span>
               <span className="block text-gradient" style={{marginLeft: '1rem'}}>Pelatihan Vokasi</span>
               <span className="block">& Produktivitas</span>
             </h1>
           </div>
 
-          <p className="hero-subtitle text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed" style={{marginLeft: '2rem'}}>
+          <p className="hero-subtitle text-xl md:text-2xl text-white mb-12 max-w-4xl mx-auto leading-relaxed" style={{marginLeft: '2rem'}}>
             Membangun SDM Indonesia yang kompeten dan produktif melalui 
             <span className="font-semibold text-emerald-700 dark:text-emerald-400 underline decoration-wavy decoration-emerald-300"> pelatihan vokasi berkualitas tinggi</span>
           </p>
