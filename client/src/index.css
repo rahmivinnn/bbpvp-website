@@ -127,14 +127,26 @@
   .natural-card {
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 13px 11px 14px;
+    box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.08);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: rotate(0.1deg);
   }
 
   .natural-card:hover {
-    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
+    box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px) rotate(0deg);
+    border-radius: 12px;
+  }
+
+  .natural-card:nth-child(even) {
+    transform: rotate(-0.05deg);
+    border-radius: 13px 10px 14px 11px;
+  }
+
+  .natural-card:nth-child(3n) {
+    transform: rotate(0.08deg);
+    border-radius: 11px 14px 10px 13px;
   }
 
   .modern-button {

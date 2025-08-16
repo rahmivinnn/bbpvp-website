@@ -56,37 +56,37 @@ export function ServiceFlowSection() {
     {
       title: 'Pelatihan Berbasis Kompetensi (PBK)',
       description: 'Gratis (dibiayai pemerintah) dengan seleksi',
-      icon: '🎓',
+icon: 'PBK',
       highlight: true
     },
     {
       title: 'Sertifikasi Profesi (BNSP)',
       description: 'Skema kejuruan inti; TUK mitra tersebar di Jawa Barat',
-      icon: '🏆',
+icon: 'BNSP',
       highlight: false
     },
     {
       title: 'Job Matching & Job Fair',
       description: 'Kurasi lowongan & sesi rekrutmen cepat',
-      icon: '💼',
+icon: 'JOB',
       highlight: false
     },
     {
       title: 'Kelas Kolaborasi DUDI',
       description: 'Kurikulum adaptif sesuai demand; instruktur tamu dari industri',
-      icon: '🤝',
+icon: 'DUDI',
       highlight: false
     },
     {
       title: 'Inkubasi & Showcase',
       description: 'Pameran karya, demo produk, pitching UMKM/entry level creator',
-      icon: '🚀',
+icon: 'INC',
       highlight: false
     },
     {
       title: 'PBL (Project Based Learning)',
       description: 'Pembelajaran berbasis proyek dengan real case dari industri',
-      icon: '🎯',
+icon: 'PBL',
       highlight: true
     }
   ];
@@ -96,8 +96,9 @@ export function ServiceFlowSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Program Excellence */}
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-blue-700 dark:text-blue-400 rounded-full text-sm font-medium mb-6 border border-blue-200 dark:border-blue-800">
-            Program Keunggulan 🌟
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-lg text-sm font-medium mb-6 border border-blue-200 dark:border-blue-800">
+            <Award className="w-4 h-4" />
+            Program Keunggulan
           </div>
           <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
             <span>Program</span>
@@ -114,7 +115,9 @@ export function ServiceFlowSection() {
                 key={index} 
                 className={`natural-card p-6 text-center group ${program.highlight ? 'ring-2 ring-blue-200 dark:ring-blue-700 bg-gradient-to-br from-blue-50/50 to-purple-50/50 dark:from-blue-900/20 dark:to-purple-900/20' : ''}`}
               >
-                <div className="text-4xl mb-4">{program.icon}</div>
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border border-blue-200 dark:border-blue-700 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-xs font-bold text-blue-700 dark:text-blue-400">{program.icon}</span>
+                </div>
                 <h4 className="heading-font text-lg font-bold text-gray-900 dark:text-white mb-3">
                   {program.title}
                 </h4>
@@ -128,8 +131,9 @@ export function ServiceFlowSection() {
 
         {/* Service Flow */}
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900/30 dark:to-blue-900/30 text-green-700 dark:text-green-400 rounded-full text-sm font-medium mb-6 border border-green-200 dark:border-green-800">
-            Skema Layanan 📋
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-lg text-sm font-medium mb-6 border border-green-200 dark:border-green-800">
+            <ClipboardCheck className="w-4 h-4" />
+            Skema Layanan
           </div>
           <h2 className="section-title heading-font text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
             <span>Skema Layanan &</span>

@@ -64,8 +64,9 @@ export function FacilitiesSection() {
     <section id="facilities" className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-sm font-medium mb-6 border border-blue-200 dark:border-blue-800">
-            Fasilitas Kami 🏢
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-lg text-sm font-medium mb-6 border border-blue-200 dark:border-blue-800">
+            <Building className="w-4 h-4" />
+            Fasilitas Kami
           </div>
           <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
             <span>Bidang Keahlian</span>
@@ -105,7 +106,7 @@ export function FacilitiesSection() {
             <div className="space-y-6">
               <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
                 <h4 className="font-bold text-orange-600 dark:text-orange-400 mb-3 flex items-center gap-2">
-                  <span>🚗</span> Otomotif
+                  <span className="w-6 h-6 bg-orange-100 dark:bg-orange-900/30 rounded-md flex items-center justify-center text-xs">AUTO</span> Otomotif
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                   Engine management & injeksi, chasis/suspensi, electrical, sepeda motor, tren EV (fundamental).
@@ -114,7 +115,7 @@ export function FacilitiesSection() {
               
               <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
                 <h4 className="font-bold text-green-600 dark:text-green-400 mb-3 flex items-center gap-2">
-                  <span>⚙️</span> Manufaktur
+                  <span className="w-6 h-6 bg-green-100 dark:bg-green-900/30 rounded-md flex items-center justify-center text-xs">MFG</span> Manufaktur
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                   Bubut-frais dasar, CNC milling & turning, CAD/CAM, metrologi, welding dasar.
@@ -123,7 +124,7 @@ export function FacilitiesSection() {
               
               <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
                 <h4 className="font-bold text-blue-600 dark:text-blue-400 mb-3 flex items-center gap-2">
-                  <span>❄️</span> Refrigerasi
+                  <span className="w-6 h-6 bg-blue-100 dark:bg-blue-900/30 rounded-md flex items-center justify-center text-xs">AC</span> Refrigerasi
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                   AC split, chiller dasar, refrigerasi komersial, safe handling refrigerant.
@@ -134,7 +135,7 @@ export function FacilitiesSection() {
             <div className="space-y-6">
               <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
                 <h4 className="font-bold text-purple-600 dark:text-purple-400 mb-3 flex items-center gap-2">
-                  <span>💻</span> TIK & Kreatif
+                  <span className="w-6 h-6 bg-purple-100 dark:bg-purple-900/30 rounded-md flex items-center justify-center text-xs">TIK</span> TIK & Kreatif
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                   IT support, desain grafis cetak & media sosial, videografi drone, konten digital.
@@ -143,7 +144,7 @@ export function FacilitiesSection() {
               
               <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
                 <h4 className="font-bold text-indigo-600 dark:text-indigo-400 mb-3 flex items-center gap-2">
-                  <span>🎯</span> Area Simulasi Kerja
+                  <span className="w-6 h-6 bg-indigo-100 dark:bg-indigo-900/30 rounded-md flex items-center justify-center text-xs">SIM</span> Area Simulasi Kerja
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                   Simulasi kondisi kerja nyata untuk mempersiapkan peserta dengan lingkungan industri sebenarnya.
@@ -152,7 +153,7 @@ export function FacilitiesSection() {
               
               <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
                 <h4 className="font-bold text-pink-600 dark:text-pink-400 mb-3 flex items-center gap-2">
-                  <span>📋</span> Booth Pameran
+                  <span className="w-6 h-6 bg-pink-100 dark:bg-pink-900/30 rounded-md flex items-center justify-center text-xs">EXPO</span> Booth Pameran
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                   Area khusus untuk pameran karya peserta dan showcase hasil pembelajaran.

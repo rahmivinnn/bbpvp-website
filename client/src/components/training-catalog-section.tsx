@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Clock, BookOpen, Users, Star, ExternalLink } from 'lucide-react';
+import { Search, Clock, BookOpen, Users, Star, ExternalLink, Cpu, Wrench, MapPin, Code, Truck, Filter } from 'lucide-react';
 
 export function TrainingCatalogSection() {
   const [searchFilter, setSearchFilter] = useState('');
@@ -15,7 +15,7 @@ export function TrainingCatalogSection() {
       subKejuruan: 'Information System and Technology Development',
       price: 'Berbayar',
       rating: 4.5,
-      icon: '🤖',
+icon: Cpu,
       description: 'Pelajari penggunaan tools AI generative untuk mengoptimalkan konten digital dan strategi bisnis modern'
     },
     {
@@ -28,7 +28,7 @@ export function TrainingCatalogSection() {
       subKejuruan: 'Mesin Produksi',
       price: 'Berbayar',
       rating: 4.8,
-      icon: '⚙️',
+icon: Wrench,
       description: 'Kuasai teknologi predictive maintenance untuk meningkatkan efisiensi mesin produksi industri'
     },
     {
@@ -41,7 +41,7 @@ export function TrainingCatalogSection() {
       subKejuruan: 'Layanan Perjalanan (Travel Services)',
       price: 'Berbayar',
       rating: 4.3,
-      icon: '🌍',
+icon: MapPin,
       description: 'Bangun sistem informasi pariwisata komprehensif untuk meningkatkan layanan travel'
     },
     {
@@ -54,7 +54,7 @@ export function TrainingCatalogSection() {
       subKejuruan: 'IT Services Management System',
       price: 'Berbayar',
       rating: 4.9,
-      icon: '💻',
+icon: Code,
       description: 'Master full-stack web development dengan teknologi Node.js dan React terkini'
     },
     {
@@ -66,7 +66,7 @@ export function TrainingCatalogSection() {
       subKejuruan: 'Mekanik Alat Berat',
       price: 'Gratis',
       rating: 4.6,
-      icon: '🚛',
+icon: Truck,
       description: 'Pelatihan operasional forklift dengan sertifikasi resmi untuk industri logistik',
       highlight: true,
       note: 'Silakan isi terlebih dahulu GForm: https://forms.gle/EWFS4zHL26SVsV1w8'
@@ -87,8 +87,9 @@ export function TrainingCatalogSection() {
     <section id="training-catalog" className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 text-purple-700 dark:text-purple-400 rounded-full text-sm font-medium mb-6 border border-purple-200 dark:border-purple-800">
-            Katalog Pelatihan 📚
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 rounded-lg text-sm font-medium mb-6 border border-orange-200 dark:border-orange-800">
+            <BookOpen className="w-4 h-4" />
+            Katalog Pelatihan
           </div>
           <h2 className="section-title heading-font text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
             <span>Temukan Pelatihan</span><br/>
@@ -100,7 +101,7 @@ export function TrainingCatalogSection() {
         </div>
 
         {/* Filters */}
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 mb-12">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 mb-12 border border-gray-200 dark:border-gray-700">
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="flex-1">
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -118,7 +119,8 @@ export function TrainingCatalogSection() {
               </div>
             </div>
             <div className="lg:w-64">
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center gap-2">
+                <Filter className="w-4 h-4" />
                 Filter Kejuruan
               </label>
               <select
@@ -143,7 +145,12 @@ export function TrainingCatalogSection() {
             >
               {/* Header */}
               <div className="flex items-start justify-between mb-4">
-                <div className="text-4xl">{program.icon}</div>
+                <div className="p-3 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 rounded-xl">
+                  {(() => {
+                    const Icon = program.icon;
+                    return <Icon className="w-6 h-6 text-gray-700 dark:text-gray-300" />;
+                  })()}
+                </div>
                 <div className="flex items-center gap-1">
                   <Star className="w-4 h-4 text-yellow-400 fill-current" />
                   <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
@@ -218,7 +225,9 @@ export function TrainingCatalogSection() {
         {/* No Results */}
         {filteredPrograms.length === 0 && (
           <div className="text-center py-12">
-            <div className="text-6xl mb-4">🔍</div>
+            <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-full inline-block mb-4">
+              <Search className="w-8 h-8 text-gray-500 dark:text-gray-400" />
+            </div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
               Tidak ada pelatihan yang ditemukan
             </h3>
