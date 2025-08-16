@@ -5,6 +5,18 @@ import bbpvpBuilding from '@assets/unnamed (5)_1755321002005.webp';
 import bbpvpSeating from '@assets/unnamed (6)_1755321001978.webp';
 import bbpvpEntrance from '@assets/unnamed (1)_1755321002007.webp';
 import bbpvpCampus from '@assets/2025-07-03 (2)_1755321002006.webp';
+import whatsapp1 from '@assets/WhatsApp Image 2025-08-16 at 11.06.44 AM_1755322269113.jpeg';
+import whatsapp2 from '@assets/WhatsApp Image 2025-08-16 at 11.06.43 AM (1)_1755322269128.jpeg';
+import whatsapp3 from '@assets/WhatsApp Image 2025-08-16 at 11.06.43 AM_1755322269129.jpeg';
+import whatsapp4 from '@assets/WhatsApp Image 2025-08-16 at 11.06.42 AM_1755322269129.jpeg';
+import whatsapp5 from '@assets/WhatsApp Image 2025-08-16 at 11.06.41 AM_1755322269130.jpeg';
+import whatsapp6 from '@assets/WhatsApp Image 2025-08-16 at 11.06.40 AM (2)_1755322269130.jpeg';
+import whatsapp7 from '@assets/WhatsApp Image 2025-08-16 at 11.06.40 AM (1)_1755322269130.jpeg';
+import whatsapp8 from '@assets/WhatsApp Image 2025-08-16 at 11.06.40 AM_1755322269131.jpeg';
+import whatsapp9 from '@assets/WhatsApp Image 2025-08-16 at 11.06.39 AM (1)_1755322269131.jpeg';
+import whatsapp10 from '@assets/WhatsApp Image 2025-08-16 at 11.06.39 AM_1755322269131.jpeg';
+import whatsapp11 from '@assets/WhatsApp Image 2025-08-16 at 11.06.38 AM_1755322269132.jpeg';
+import whatsapp12 from '@assets/WhatsApp Image 2025-08-16 at 11.03.54 AM (1)_1755322269132.jpeg';
 
 export interface ProgramData {
   id: number;
@@ -299,5 +311,89 @@ export const galleryData = [
     description: 'Fasilitas untuk event besar dan job fair',
     image: bbpvpCampus,
     category: 'seminar'
+  },
+  {
+    id: 9,
+    title: 'Kegiatan Pelatihan Vokasi',
+    description: 'Suasana pembelajaran praktik di BBPVP Bandung',
+    image: whatsapp1,
+    category: 'pelatihan'
+  },
+  {
+    id: 10,
+    title: 'Workshop Teknologi Industri',
+    description: 'Pelatihan teknologi industri modern',
+    image: whatsapp2,
+    category: 'workshop'
+  },
+  {
+    id: 11,
+    title: 'Sesi Pembelajaran Interaktif',
+    description: 'Kegiatan pembelajaran interaktif dengan instruktur',
+    image: whatsapp3,
+    category: 'pelatihan'
+  },
+  {
+    id: 12,
+    title: 'Fasilitas Praktikum Modern',
+    description: 'Ruang praktikum dengan peralatan modern',
+    image: whatsapp4,
+    category: 'fasilitas'
+  },
+  {
+    id: 13,
+    title: 'Program PBL (Project Based Learning)',
+    description: 'Implementasi Project Based Learning di BBPVP',
+    image: whatsapp5,
+    category: 'pelatihan'
+  },
+  {
+    id: 14,
+    title: 'Seminar dan Sosialisasi',
+    description: 'Kegiatan seminar dan sosialisasi program',
+    image: whatsapp6,
+    category: 'seminar'
+  },
+  {
+    id: 15,
+    title: 'Kegiatan Sertifikasi BNSP',
+    description: 'Proses sertifikasi kompetensi BNSP',
+    image: whatsapp7,
+    category: 'workshop'
+  },
+  {
+    id: 16,
+    title: 'Area Pembelajaran Outdoor',
+    description: 'Kegiatan pembelajaran di area outdoor',
+    image: whatsapp8,
+    category: 'fasilitas'
+  },
+  {
+    id: 17,
+    title: 'Kelas Teori Interaktif',
+    description: 'Suasana kelas teori dengan metode interaktif',
+    image: whatsapp9,
+    category: 'pelatihan'
+  },
+  {
+    id: 18,
+    title: 'Workshop Praktik Industri',
+    description: 'Kegiatan workshop praktik berstandar industri',
+    image: whatsapp10,
+    category: 'workshop'
+  },
+  {
+    id: 19,
+    title: 'Job Fair dan Career Expo',
+    description: 'Kegiatan job fair dan career expo BBPVP',
+    image: whatsapp11,
+    category: 'seminar'
+  },
+  {
+    id: 20,
+    title: 'Fasilitas Penunjang Pelatihan',
+    description: 'Berbagai fasilitas penunjang kegiatan pelatihan',
+    image: whatsapp12,
+    category: 'fasilitas'
   }
 ];
