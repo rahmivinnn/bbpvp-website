@@ -39,7 +39,7 @@ export function ChatBot() {
     
     'sertifikasi bnsp': 'Sertifikasi BNSP di BBPVP Bandung:\n\n✅ Sertifikat profesi yang diakui industri\n✅ Skema kejuruan inti tersedia\n✅ TUK (Tempat Uji Kompetensi) terakreditasi\n✅ TUK mitra tersebar di Jawa Barat\n✅ Asesor bersertifikat dan berpengalaman\n\nSertifikat BNSP meningkatkan peluang kerja Anda!',
     
-    'kontak bbpvp': 'Hubungi BBPVP Bandung:\n\n📍 Alamat:\nJl. Jenderal Gatot Subroto No. 170\nKelurahan Gumuruh, Kecamatan Batununggal\nKota Bandung, Jawa Barat 40275\n\n📞 Telp: 022-7312564\n📱 Call Center: 1500630\n📧 Email: info@bbpvpbandung.kemnaker.go.id\n\n🕒 Jam Operasional: Senin-Jumat 08:00-16:00'
+    'kontak bbpvp': 'Hubungi BBPVP Bandung:\n\n📍 Alamat:\nJl. Jenderal Gatot Subroto No. 170\nKelurahan Gumuruh, Kecamatan Batununggal\nKota Bandung, Jawa Barat 40275\n\n📞 Telp: 022-7312564\n📱 Call Center: 1500630\n📧 Email: info.bbpvpbandung@kemnaker.co.id\n\n🕒 Jam Operasional: Senin-Jumat 08:00-16:00'
   };
 
   const scrollToBottom = () => {
