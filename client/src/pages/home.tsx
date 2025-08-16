@@ -8,6 +8,7 @@ import { GallerySection } from '../components/gallery-section';
 import { ContactSection } from '../components/contact-section';
 import { FacilitiesSection } from '../components/facilities-section';
 import { ServiceFlowSection } from '../components/service-flow-section';
+import { TrainingCatalogSection } from '../components/training-catalog-section';
 import { Footer } from '../components/footer';
 import { ScrollProgress } from '../components/ui/scroll-progress';
 import { BackToTop } from '../components/ui/back-to-top';
@@ -50,6 +51,7 @@ export default function Home() {
         <ProgramsSection />
         <FacilitiesSection />
         <ServiceFlowSection />
+        <TrainingCatalogSection />
         <GallerySection />
         <ContactSection />
       </main>
