@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react';
+import logoImage from '@assets/bbp-removebg-preview_1755309171525.png';
 
 export function Footer() {
   const quickLinks = [
@@ -43,9 +44,9 @@ export function Footer() {
             <div className="flex items-center space-x-4 mb-6">
               <div className="w-16 h-16 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl flex items-center justify-center shadow-lg">
                 <img 
-                  src="https://bbpvpbandung.kemnaker.go.id/uploads/d9810d73cd90a7c974c2e79856d80cc3.png" 
+                  src={logoImage} 
                   alt="BBPVP Bandung" 
-                  className="h-10 w-10 object-contain filter brightness-0 invert"
+                  className="h-10 w-10 object-contain"
                 />
               </div>
               <div>

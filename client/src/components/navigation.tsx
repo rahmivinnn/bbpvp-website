@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useDarkMode } from '../hooks/use-dark-mode';
+import logoImage from '@assets/bbp-removebg-preview_1755309171525.png';
 
 export function Navigation() {
   const { isDark, toggleDark } = useDarkMode();
@@ -30,9 +31,9 @@ export function Navigation() {
           <div className="flex items-center space-x-4">
             <div className="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center shadow-md">
               <img 
-                src="https://bbpvpbandung.kemnaker.go.id/uploads/d9810d73cd90a7c974c2e79856d80cc3.png" 
+                src={logoImage} 
                 alt="BBPVP Bandung Logo" 
-                className="h-8 w-8 object-contain filter brightness-0 invert"
+                className="h-8 w-8 object-contain"
               />
             </div>
             <div>
