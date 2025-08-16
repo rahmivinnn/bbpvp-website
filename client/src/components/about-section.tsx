@@ -1,4 +1,5 @@
 import { Check, Target, Zap, Diamond } from 'lucide-react';
+import bbpvpTrainingImage from '@assets/unnamed (4)_1755321002006.webp';
 
 export function AboutSection() {
   const features = [
@@ -89,7 +90,7 @@ icon: Diamond,
             <div className="absolute -top-6 -left-6 w-16 h-16 bg-emerald-200 dark:bg-emerald-800 rounded-full opacity-60"></div>
             <div className="absolute -bottom-3 -right-3 w-8 h-8 bg-amber-300 dark:bg-amber-600 rounded-full opacity-80"></div>
             <img 
-              src="@assets/unnamed (4)_1755321002006.webp" 
+              src={bbpvpTrainingImage} 
               alt="BBPVP Training Session" 
               className="relative rounded-2xl shadow-lg w-full h-auto transform hover:scale-105 hover:rotate-1 transition-all duration-500 border-4 border-white dark:border-gray-700"
             />
