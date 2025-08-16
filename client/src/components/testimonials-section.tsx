@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote, Star, User } from 'lucide-react';
+import duranPhoto from '@assets/WhatsApp Image 2025-08-16 at 4.24.17 PM_1755336322678.jpeg';
 
 export function TestimonialsSection() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -19,14 +20,14 @@ export function TestimonialsSection() {
     },
     {
       id: 2,
-      name: 'Sari Indah Permatasari',
-      age: 22,
-      program: 'TIK & Kreatif Digital - Desain Grafis',
-      company: 'Freelancer & Co-Founder Startup',
-      position: 'Creative Director',
-      photo: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
+      name: 'Muhammad Duran',
+      age: 25,
+      program: 'Manufaktur - CNC & Welding',
+      company: 'PT. Industri Jaya Makmur',
+      position: 'Operator CNC Ahli',
+      photo: duranPhoto,
       rating: 5,
-      testimonial: 'BBPVP Bandung membuka jalan saya di dunia kreatif digital. Pelatihan desain grafisnya sangat komprehensif, dari dasar hingga advanced. Sekarang saya tidak hanya bekerja sebagai freelancer dengan klien tetap, tapi juga co-founder startup yang bergerak di bidang digital marketing. Project Based Learning-nya sangat membantu membangun portofolio yang kuat.',
+      testimonial: 'Dulu saya cuma bisa bikin kopi dan mie instan, sekarang bisa bikin komponen mesin! 😄 Awalnya takut sama mesin CNC yang gede-gede, ternyata lebih jinak dari kucing tetangga. Instruktur di BBPVP sabar banget ngajarin, bahkan waktu saya salah program sampai mesin bunyi aneh kayak robot ngambek. Sekarang gaji saya udah bisa beli motor kredit, dan yang penting, emak udah bangga karena anaknya bisa jadi "tukang mesin pintar" katanya. Makasih BBPVP, dari yang dulu cuma bisa ngoprek HP sekarang bisa ngoprek mesin!',
       year: '2024'
     },
     {
