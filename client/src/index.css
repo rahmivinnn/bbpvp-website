@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,15 +23,19 @@
   --border: hsl(214 32% 91%);
   --input: hsl(214 32% 91%);
   --ring: hsl(210 100% 50%);
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
   --radius: 0.75rem;
   
-  /* Modern gradients */
-  --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%) 0%, hsl(220 100% 60%) 100%);
-  --gradient-secondary: linear-gradient(135deg, hsl(280 100% 70%) 0%, hsl(220 100% 60%) 100%);
-  --gradient-accent: linear-gradient(135deg, hsl(15 80% 50%) 0%, hsl(25 95% 53%) 100%);
+  /* Natural colors */
+  --forest-green: #2d5016;
+  --warm-orange: #e55a2b;
+  --deep-blue: #1e3a8a;
+  --natural-gray: #374151;
+  --cream: #fefbf4;
+  --earth-brown: #92400e;
   
   /* Shadow variables */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -90,7 +94,21 @@
   }
 
   .hero-bg {
-    background: linear-gradient(135deg, hsl(210 100% 97%) 0%, hsl(220 100% 95%) 100%);
+    background: linear-gradient(135deg, #fefbf4 0%, #f3f4f6 50%, #e5e7eb 100%);
+    position: relative;
+  }
+
+  .hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(45, 80, 22, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(229, 90, 43, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 60%, rgba(30, 58, 138, 0.05) 0%, transparent 50%);
   }
 
   .dark .hero-bg {
@@ -98,23 +116,25 @@
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, hsl(210 100% 50%), hsl(280 100% 70%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--warm-orange);
   }
 
-  .modern-card {
+  .heading-font {
+    font-family: var(--font-display);
+    font-weight: 600;
+  }
+
+  .natural-card {
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
-    transition: all 0.2s ease-in-out;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .modern-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
+  .natural-card:hover {
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px) rotate(0.5deg);
   }
 
   .modern-button {
@@ -168,9 +188,10 @@
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    33% { transform: translateY(-10px) rotate(1deg); }
-    66% { transform: translateY(5px) rotate(-1deg); }
+    0%, 100% { transform: translateY(0px) rotate(-1deg); }
+    25% { transform: translateY(-8px) rotate(0.5deg); }
+    50% { transform: translateY(-15px) rotate(1deg); }
+    75% { transform: translateY(-3px) rotate(-0.5deg); }
   }
 
   @keyframes fadeIn {

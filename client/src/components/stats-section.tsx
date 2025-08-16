@@ -48,22 +48,26 @@ export function StatsSection() {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+    <section className="py-20 bg-gradient-to-br from-emerald-50 via-cream to-amber-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8" ref={statsRef}>
-          {stats.map((stat, index) => (
-            <div key={index} className="stat-item text-center group">
-              <div className="modern-card p-6 hover:scale-105 transition-all duration-300">
-                <div 
-                  className="text-4xl md:text-5xl font-bold bg-gradient-to-br from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 counter" 
-                  data-target={stat.value}
-                >
-                  0
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6" ref={statsRef}>
+          {stats.map((stat, index) => {
+            const colors = ['text-emerald-700', 'text-amber-700', 'text-red-600', 'text-blue-700'];
+            const bgColors = ['bg-emerald-100/60', 'bg-amber-100/60', 'bg-red-100/60', 'bg-blue-100/60'];
+            return (
+              <div key={index} className="stat-item text-center group">
+                <div className={`natural-card p-6 ${bgColors[index]} dark:bg-gray-800`} style={{transform: `rotate(${(index % 2 === 0 ? 1 : -1) * (index + 1) * 0.8}deg)`}}>
+                  <div 
+                    className={`text-4xl md:text-5xl font-bold ${colors[index]} mb-2 counter heading-font`} 
+                    data-target={stat.value}
+                  >
+                    0
+                  </div>
+                  <div className="text-gray-600 dark:text-gray-400 font-medium text-xs uppercase tracking-wider">{stat.label}</div>
                 </div>
-                <div className="text-gray-600 dark:text-gray-400 font-medium text-sm uppercase tracking-wide">{stat.label}</div>
               </div>
-            </div>
-          ))}
+            )}
+          )}
         </div>
       </div>
     </section>

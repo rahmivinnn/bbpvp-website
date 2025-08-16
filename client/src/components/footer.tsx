@@ -41,7 +41,7 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl flex items-center justify-center shadow-lg" style={{transform: 'rotate(-5deg)'}}>
                 <img 
                   src="https://bbpvpbandung.kemnaker.go.id/uploads/d9810d73cd90a7c974c2e79856d80cc3.png" 
                   alt="BBPVP Bandung" 
@@ -49,8 +49,8 @@ export function Footer() {
                 />
               </div>
               <div>
-                <h3 className="font-bold text-2xl">BBPVP Bandung</h3>
-                <p className="text-gray-300 text-sm">Kementerian Ketenagakerjaan RI</p>
+                <h3 className="heading-font font-bold text-2xl">BBPVP Bandung</h3>
+                <p className="text-gray-300 text-sm">Kementerian Ketenagakerjaan RI 🇮🇩</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-8 text-lg">
@@ -62,7 +62,8 @@ export function Footer() {
                 <a 
                   key={index}
                   href={social.href} 
-                  className="w-12 h-12 bg-gray-800 rounded-2xl flex items-center justify-center hover:bg-gradient-to-br hover:from-blue-500 hover:to-purple-600 transition-all duration-300 transform hover:scale-110"
+                  className="w-12 h-12 bg-gray-800 rounded-2xl flex items-center justify-center hover:bg-gradient-to-br hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-110 hover:rotate-12"
+                  style={{transform: `rotate(${(index % 2 === 0 ? 1 : -1) * (index + 1) * 2}deg)`}}
                 >
                   <i className={`${social.icon} text-lg`}></i>
                 </a>
@@ -114,7 +115,8 @@ export function Footer() {
               &copy; 2024 BBPVP Bandung - Kementerian Ketenagakerjaan Republik Indonesia. All rights reserved.
             </p>
             <div className="flex items-center space-x-4 text-sm text-gray-400">
-              <span>Dibuat dengan ❤️ untuk Indonesia</span>
+              <span>Dibuat dengan ❤️ untuk Indonesia 🇮🇩</span>
+              <div className="w-2 h-2 bg-red-400 rounded-full animate-pulse"></div>
             </div>
           </div>
         </div>
