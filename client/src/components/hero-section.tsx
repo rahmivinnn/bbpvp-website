@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
 import logoImage from '@assets/bbp-removebg-preview_1755309171525.png';
-import backgroundImage from '@assets/WhatsApp Image 2025-08-16 at 11.02.14 AM (1)_1755317451418.jpeg';
+import backgroundImage from '@assets/bg-image.jpg';
 
 export function HeroSection() {
   useEffect(() => {
@@ -34,7 +34,7 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/30"></div>
 
