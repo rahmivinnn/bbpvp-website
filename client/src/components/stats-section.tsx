@@ -1,13 +1,13 @@
 import { useEffect, useRef } from 'react';
+import { Building, BarChart3, GraduationCap } from 'lucide-react';
 
 export function StatsSection() {
   const statsRef = useRef<HTMLDivElement>(null);
 
   const stats = [
-    { value: 5, label: 'Angkatan' },
-    { value: 60, label: 'Kelas' },
-    { value: 900, label: 'Alumni' },
-    { value: 15, label: 'Tahun Pengalaman' }
+    { value: 5, label: 'Angkatan', icon: Building, color: 'text-white', bgColor: 'bg-blue-700' },
+    { value: 60, label: 'Kelas', icon: BarChart3, color: 'text-white', bgColor: 'bg-blue-700' },
+    { value: 900, label: 'Alumni', icon: GraduationCap, color: 'text-white', bgColor: 'bg-blue-700' }
   ];
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export function StatsSection() {
             counters.forEach((counter: any) => {
               const target = parseInt(counter.dataset.target);
               let current = 0;
-              const increment = target / 100;
+              const increment = target / 50;
               
               const updateCounter = () => {
                 if (current < target) {
@@ -37,7 +37,7 @@ export function StatsSection() {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     if (statsRef.current) {
@@ -48,26 +48,53 @@ export function StatsSection() {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-emerald-50 via-cream to-amber-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6" ref={statsRef}>
+    <section className="py-20 bg-blue-700 dark:bg-blue-800 transition-colors duration-300">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Header */}
+        <div className="mb-16">
+          <h2 className="heading-font text-4xl md:text-5xl font-bold text-white mb-4">
+            Lulusan dan Kelas
+          </h2>
+          <p className="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto">
+            BBPVP Bandung menghasilkan banyak alumni dan pekerja sukses.
+          </p>
+        </div>
+
+        {/* Stats Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" ref={statsRef}>
           {stats.map((stat, index) => {
-            const colors = ['text-emerald-700', 'text-amber-700', 'text-red-600', 'text-blue-700'];
-            const bgColors = ['bg-emerald-100/60', 'bg-amber-100/60', 'bg-red-100/60', 'bg-blue-100/60'];
+            const Icon = stat.icon;
             return (
-              <div key={index} className="stat-item text-center group">
-                <div className={`natural-card p-6 ${bgColors[index]} dark:bg-gray-800`}>
+              <div key={index} className="text-center group">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
+                  {/* Icon */}
+                  <div className="w-20 h-20 mx-auto mb-6 bg-white/20 rounded-2xl flex items-center justify-center">
+                    <Icon className="w-10 h-10 text-white" />
+                  </div>
+                  
+                  {/* Number */}
                   <div 
-                    className={`text-4xl md:text-5xl font-bold ${colors[index]} mb-2 counter heading-font`} 
+                    className="text-5xl md:text-6xl font-bold text-white mb-3 counter heading-font" 
                     data-target={stat.value}
                   >
                     0
                   </div>
-                  <div className="text-gray-600 dark:text-gray-400 font-medium text-xs uppercase tracking-wider">{stat.label}</div>
+                  
+                  {/* Label */}
+                  <div className="text-blue-100 font-semibold text-xl">
+                    {stat.label}
+                  </div>
                 </div>
               </div>
-            )}
-          )}
+            );
+          })}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center">
+          <p className="text-white text-lg md:text-xl font-medium">
+            Cari dan temukan kelas favoritmu disini!
+          </p>
         </div>
       </div>
     </section>
