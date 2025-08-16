@@ -90,49 +90,55 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
+    <section id="contact" className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="section-title text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Hubungi Kami
+        <div className="text-center mb-20">
+          <div className="inline-block px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full text-sm font-semibold mb-4">
+            📞 Hubungi Kami
+          </div>
+          <h2 className="section-title text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            Mari 
+            <span className="text-gradient">Berkolaborasi</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
             Dapatkan informasi lebih lanjut tentang program pelatihan dan layanan kami
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Contact Info */}
-          <div className="lg:col-span-1 space-y-8">
+          <div className="lg:col-span-1 space-y-6">
             {contactInfo.map((info, index) => (
-              <div key={index} className="contact-item bg-white dark:bg-slate-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="flex items-center space-x-4">
-                  <div className={`w-12 h-12 ${info.bgColor} rounded-full flex items-center justify-center`}>
-                    <info.icon className="w-6 h-6 text-white" />
+              <div key={index} className="contact-item modern-card p-6 group hover:scale-105 transition-all duration-300">
+                <div className="flex items-start space-x-4">
+                  <div className={`w-14 h-14 ${info.bgColor} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                    <info.icon className="w-7 h-7 text-white" />
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-1">{info.title}</h4>
-                    <p className="text-gray-600 dark:text-gray-400 whitespace-pre-line">{info.content}</p>
+                  <div className="flex-1">
+                    <h4 className="font-bold text-gray-900 dark:text-white mb-2">{info.title}</h4>
+                    <p className="text-gray-600 dark:text-gray-400 whitespace-pre-line text-sm leading-relaxed">{info.content}</p>
                   </div>
                 </div>
               </div>
             ))}
 
             {/* Service Links */}
-            <div className="space-y-4">
-              <h4 className="font-semibold text-gray-900 dark:text-white">Layanan Pengaduan</h4>
-              <div className="space-y-2">
+            <div className="space-y-6">
+              <h4 className="font-bold text-gray-900 dark:text-white text-lg">Layanan Pengaduan</h4>
+              <div className="space-y-3">
                 {serviceLinks.map((service, index) => (
                   <a 
                     key={index}
                     href={service.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="service-link flex items-center space-x-3 p-3 bg-white dark:bg-slate-900 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors group"
+                    className="service-link flex items-center space-x-3 p-4 modern-card hover:scale-105 transition-all duration-300 group"
                   >
-                    <service.icon className={`w-5 h-5 ${service.color}`} />
-                    <span className="text-gray-700 dark:text-gray-300">{service.title}</span>
-                    <ExternalLink className="w-4 h-4 text-gray-400 ml-auto" />
+                    <div className="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className={`w-5 h-5 ${service.color}`} />
+                    </div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium flex-1">{service.title}</span>
+                    <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-blue-500 transition-colors duration-300" />
                   </a>
                 ))}
               </div>
@@ -141,8 +147,13 @@ export function ContactSection() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Kirim Pesan</h3>
+            <div className="modern-card p-8">
+              <div className="flex items-center space-x-3 mb-8">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center">
+                  <Mail className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Kirim Pesan</h3>
+              </div>
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -204,7 +215,7 @@ export function ContactSection() {
                 </div>
                 <button 
                   type="submit" 
-                  className="w-full bg-gradient-to-r from-primary to-primary/90 text-white px-8 py-4 rounded-lg font-semibold hover:from-primary/90 hover:to-primary transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                  className="w-full modern-button-primary px-8 py-4 text-lg font-semibold bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                 >
                   <Mail className="w-5 h-5" />
                   Kirim Pesan

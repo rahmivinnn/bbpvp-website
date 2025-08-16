@@ -35,23 +35,25 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-slate-900 text-white py-16">
+    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Logo & Description */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="https://bbpvpbandung.kemnaker.go.id/uploads/d9810d73cd90a7c974c2e79856d80cc3.png" 
-                alt="BBPVP Bandung" 
-                className="h-12 w-12"
-              />
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                <img 
+                  src="https://bbpvpbandung.kemnaker.go.id/uploads/d9810d73cd90a7c974c2e79856d80cc3.png" 
+                  alt="BBPVP Bandung" 
+                  className="h-10 w-10 object-contain filter brightness-0 invert"
+                />
+              </div>
               <div>
-                <h3 className="font-bold text-xl">BBPVP Bandung</h3>
-                <p className="text-gray-400 text-sm">Kementerian Ketenagakerjaan RI</p>
+                <h3 className="font-bold text-2xl">BBPVP Bandung</h3>
+                <p className="text-gray-300 text-sm">Kementerian Ketenagakerjaan RI</p>
               </div>
             </div>
-            <p className="text-gray-400 leading-relaxed mb-6">
+            <p className="text-gray-300 leading-relaxed mb-8 text-lg">
               Balai Besar Pelatihan Vokasi dan Produktivitas Bandung berkomitmen mengembangkan sumber daya manusia 
               Indonesia melalui pelatihan vokasi berkualitas tinggi.
             </p>
@@ -60,9 +62,9 @@ export function Footer() {
                 <a 
                   key={index}
                   href={social.href} 
-                  className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                  className="w-12 h-12 bg-gray-800 rounded-2xl flex items-center justify-center hover:bg-gradient-to-br hover:from-blue-500 hover:to-purple-600 transition-all duration-300 transform hover:scale-110"
                 >
-                  <i className={`${social.icon} text-sm`}></i>
+                  <i className={`${social.icon} text-lg`}></i>
                 </a>
               ))}
             </div>
@@ -106,10 +108,15 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-slate-800 pt-8 text-center">
-          <p className="text-gray-400">
-            &copy; 2024 BBPVP Bandung - Kementerian Ketenagakerjaan Republik Indonesia. All rights reserved.
-          </p>
+        <div className="border-t border-gray-700/50 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-300 text-sm">
+              &copy; 2024 BBPVP Bandung - Kementerian Ketenagakerjaan Republik Indonesia. All rights reserved.
+            </p>
+            <div className="flex items-center space-x-4 text-sm text-gray-400">
+              <span>Dibuat dengan ❤️ untuk Indonesia</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

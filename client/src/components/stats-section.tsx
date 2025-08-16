@@ -48,18 +48,20 @@ export function StatsSection() {
   }, []);
 
   return (
-    <section className="py-16 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center" ref={statsRef}>
+    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8" ref={statsRef}>
           {stats.map((stat, index) => (
-            <div key={index} className="stat-item">
-              <div 
-                className="text-4xl font-bold text-primary dark:text-primary mb-2 counter" 
-                data-target={stat.value}
-              >
-                0
+            <div key={index} className="stat-item text-center group">
+              <div className="modern-card p-6 hover:scale-105 transition-all duration-300">
+                <div 
+                  className="text-4xl md:text-5xl font-bold bg-gradient-to-br from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 counter" 
+                  data-target={stat.value}
+                >
+                  0
+                </div>
+                <div className="text-gray-600 dark:text-gray-400 font-medium text-sm uppercase tracking-wide">{stat.label}</div>
               </div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium">{stat.label}</div>
             </div>
           ))}
         </div>
