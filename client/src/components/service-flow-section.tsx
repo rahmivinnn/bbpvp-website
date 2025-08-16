@@ -6,7 +6,7 @@ export function ServiceFlowSection() {
       icon: UserPlus,
       title: 'Daftar Online/On-site',
       description: 'Pendaftaran dapat dilakukan secara online melalui website atau langsung di lokasi BBPVP Bandung',
-      color: 'text-blue-600',
+      color: 'text-slate-600',
       bgColor: 'bg-blue-100',
       number: '01'
     },
@@ -96,7 +96,7 @@ icon: 'PBL',
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Program Excellence */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-lg text-sm font-medium mb-6 border border-blue-200 dark:border-blue-800">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-900/30 text-slate-700 dark:text-slate-400 rounded-lg text-sm font-medium mb-6 border border-slate-200 dark:border-slate-800">
             <Award className="w-4 h-4" />
             Program Keunggulan
           </div>
@@ -113,10 +113,10 @@ icon: 'PBL',
             {programs.map((program, index) => (
               <div 
                 key={index} 
-                className={`natural-card p-6 text-center group ${program.highlight ? 'ring-2 ring-blue-200 dark:ring-blue-700 bg-blue-50 dark:bg-blue-900/20' : ''}`}
+                className={`natural-card p-6 text-center group ${program.highlight ? 'ring-2 ring-slate-200 dark:ring-slate-700 bg-slate-50 dark:bg-slate-900/20' : ''}`}
               >
-                <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-xs font-bold text-blue-700 dark:text-blue-400">{program.icon}</span>
+                <div className="w-12 h-12 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-700 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-xs font-bold text-slate-700 dark:text-slate-400">{program.icon}</span>
                 </div>
                 <h4 className="heading-font text-lg font-bold text-gray-900 dark:text-white mb-3">
                   {program.title}

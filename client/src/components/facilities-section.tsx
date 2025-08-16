@@ -6,7 +6,7 @@ export function FacilitiesSection() {
       icon: Building,
       title: 'Workshop Berstandar Industri',
       description: 'Fasilitas workshop dengan peralatan dan SOP selevel industri',
-      color: 'text-blue-600',
+color: 'text-slate-600',
       bgColor: 'bg-blue-100'
     },
     {
@@ -64,7 +64,7 @@ export function FacilitiesSection() {
     <section id="facilities" className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-lg text-sm font-medium mb-6 border border-blue-200 dark:border-blue-800">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-900/30 text-slate-700 dark:text-slate-400 rounded-lg text-sm font-medium mb-6 border border-slate-200 dark:border-slate-800">
             <Building className="w-4 h-4" />
             Fasilitas Kami
           </div>
@@ -98,7 +98,7 @@ export function FacilitiesSection() {
         </div>
 
         {/* Bidang Keahlian Details */}
-        <div className="bg-blue-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-blue-100 dark:border-gray-700">
+        <div className="bg-slate-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-slate-100 dark:border-gray-700">
           <h3 className="heading-font text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             Bidang Keahlian
           </h3>
@@ -123,7 +123,7 @@ export function FacilitiesSection() {
               </div>
               
               <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-sm">
-                <h4 className="font-bold text-blue-600 dark:text-blue-400 mb-3 flex items-center gap-2">
+                <h4 className="font-bold text-slate-600 dark:text-slate-400 mb-3 flex items-center gap-2">
                   <span className="w-6 h-6 bg-blue-100 dark:bg-blue-900/30 rounded-md flex items-center justify-center text-xs">AC</span> Refrigerasi
                 </h4>
                 <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">

@@ -59,7 +59,7 @@ icon: Diamond,
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
                 Berlokasi strategis di Jl. Jenderal Gatot Subroto No. 170, Bandung, BBPVP Bandung melayani talenta muda, pencari kerja, hingga pekerja industri yang ingin upskill/reskill—dari otomotif, manufaktur, refrigerasi & tata udara, sampai teknologi informasi dan komunikasi.
               </p>
-              <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-2xl mb-6 border border-blue-100 dark:border-blue-800">
+              <div className="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-2xl mb-6 border border-slate-100 dark:border-slate-800">
                 <h4 className="heading-font text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
                   <span className="text-2xl">🎯</span> PBL (Project Based Learning)
                 </h4>
@@ -104,7 +104,7 @@ icon: Diamond,
               key={index}
               className="natural-card p-8 text-center group"
             >
-              <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6 mx-auto transform group-hover:scale-110 transition-all duration-300">
+              <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center mb-6 mx-auto transform group-hover:scale-110 transition-all duration-300">
                 {(() => {
                   const Icon = value.icon;
                   return <Icon className="w-8 h-8 text-white" />;

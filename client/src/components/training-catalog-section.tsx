@@ -114,7 +114,7 @@ icon: Truck,
                   placeholder="Masukkan judul atau kejuruan..."
                   value={searchFilter}
                   onChange={(e) => setSearchFilter(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                 />
               </div>
             </div>
@@ -126,7 +126,7 @@ icon: Truck,
               <select
                 value={kejuruanFilter}
                 onChange={(e) => setKejuruanFilter(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                className="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
               >
                 {kejuruanOptions.map(option => (
                   <option key={option} value={option}>{option}</option>
@@ -199,12 +199,12 @@ icon: Truck,
                   <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
                     program.price === 'Gratis' 
                       ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400'
-                      : 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400'
+                      : 'bg-slate-100 text-slate-800 dark:bg-slate-900/30 dark:text-slate-400'
                   }`}>
                     {program.price}
                   </span>
                 </div>
-                <button className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 text-sm font-medium group-hover:scale-105">
+                <button className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white rounded-lg transition-all duration-200 text-sm font-medium group-hover:scale-105">
                   Ikuti Pelatihan
                   <ExternalLink className="w-4 h-4" />
                 </button>
@@ -239,7 +239,7 @@ icon: Truck,
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-blue-600 rounded-2xl p-8 md:p-12">
+          <div className="bg-slate-700 rounded-2xl p-8 md:p-12">
             <h3 className="heading-font text-3xl font-bold text-white mb-4">
               Siap Mengembangkan Karir Anda?
             </h3>
@@ -247,10 +247,10 @@ icon: Truck,
               Bergabunglah dengan ribuan alumni yang telah sukses berkarir di industri impian mereka
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-white text-blue-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-200">
+              <button className="px-8 py-3 bg-white text-slate-700 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-200">
                 Konsultasi Gratis
               </button>
-              <button className="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200">
+              <button className="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-slate-700 transition-all duration-200">
                 Lihat Semua Program
               </button>
             </div>

@@ -106,7 +106,7 @@ export function ChatBot() {
       {/* Chat Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group ${
+        className={`fixed bottom-6 right-6 z-50 w-14 h-14 bg-slate-700 hover:bg-slate-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group ${
           isOpen ? 'scale-0' : 'scale-100'
         }`}
         style={{
@@ -121,7 +121,7 @@ export function ChatBot() {
         isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
       }`}>
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 bg-blue-600 text-white rounded-t-2xl">
+        <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 bg-slate-700 text-white rounded-t-2xl">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
               <Bot className="w-5 h-5" />
@@ -146,12 +146,12 @@ export function ChatBot() {
               <div className={`max-w-[80%] p-3 rounded-2xl text-sm ${
                 message.isBot 
                   ? 'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-bl-sm' 
-                  : 'bg-blue-600 text-white rounded-br-sm'
+                  : 'bg-slate-700 text-white rounded-br-sm'
               }`}>
                 <div className="flex items-start gap-2">
                   {message.isBot && (
                     <div className="w-5 h-5 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Bot className="w-3 h-3 text-blue-600 dark:text-blue-400" />
+                      <Bot className="w-3 h-3 text-slate-600 dark:text-slate-400" />
                     </div>
                   )}
                   <div className="whitespace-pre-wrap leading-relaxed">{message.text}</div>
@@ -168,7 +168,7 @@ export function ChatBot() {
               <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-2xl rounded-bl-sm">
                 <div className="flex items-center gap-2">
                   <div className="w-5 h-5 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center">
-                    <Bot className="w-3 h-3 text-blue-600 dark:text-blue-400" />
+                    <Bot className="w-3 h-3 text-slate-600 dark:text-slate-400" />
                   </div>
                   <div className="flex space-x-1">
                     <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse"></div>
@@ -209,13 +209,13 @@ export function ChatBot() {
               onChange={(e) => setInputText(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
               placeholder="Ketik pertanyaan Anda..."
-              className="flex-1 px-3 py-2 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white text-sm"
+              className="flex-1 px-3 py-2 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white text-sm"
               disabled={isTyping}
             />
             <button
               onClick={() => handleSendMessage()}
               disabled={!inputText.trim() || isTyping}
-              className="w-10 h-10 bg-blue-600 hover:bg-blue-700 text-white rounded-xl flex items-center justify-center hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-10 h-10 bg-slate-700 hover:bg-slate-800 text-white rounded-xl flex items-center justify-center hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Send className="w-4 h-4" />
             </button>
