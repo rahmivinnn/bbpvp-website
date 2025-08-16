@@ -1,0 +1,101 @@
+Buatkan saya website company profile BBPPVP Bandung yang:
+
+Modern, interaktif, unik, 100% manusiawi, non-template AI
+
+Memiliki animasi lengkap:
+
+Hero section Lottie animation + text reveal
+
+Scroll-trigger animations (fade, slide, scale)
+
+Parallax subtle di section tertentu
+
+Micro-interactions di tombol, link, gambar
+
+Hover animations, modal animations, gallery lightbox
+
+Dark/light mode dengan smooth transition
+
+Struktur folder siap pakai di Replit (index.html, style.css, script.js, images/, animations/)
+
+Konten lengkap 20 item:
+
+Hero section: Judul + slogan + CTA
+
+Tentang Kami: Sejarah, Visi, Misi
+3–12. 10 Program & Kegiatan unggulan, misal:
+
+Pelatihan Guru Vokasi
+
+Workshop Kurikulum Industri 4.0
+
+Seminar Kewirausahaan Siswa
+
+Pelatihan Digital Skills Mahasiswa
+
+Workshop Safety & Quality Control
+
+Training Leadership & Manajemen Sekolah
+
+Program Magang Industri Terpadu
+
+Seminar Internasional Pendidikan Vokasi
+
+Pelatihan Laboratorium & Workshop Praktik
+
+Coaching Guru & Tenaga Pendidik
+13–20. 8 Galeri Foto & Video kegiatan nyata BBPPVP Bandung, misal:
+
+Foto pelatihan guru
+
+Foto workshop siswa
+
+Video seminar tahunan
+
+Foto laboratorium praktik
+
+Foto kegiatan outdoor/field trip
+
+Foto staff dan pengajar
+
+Video highlight program magang
+
+Foto kegiatan CSR BBPPVP Bandung
+
+Fitur tambahan “wow factor”:
+
+Dark/light mode toggle
+
+Scroll progress bar
+
+Lazy load images & Lottie animations
+
+Floating back-to-top button dengan hover animation
+
+Responsive layout: desktop, tablet, mobile
+
+Desain & UX/UI
+
+Warna: biru profesional, putih, abu lembut, accent cerah (orange/hijau)
+
+Font: Poppins / Inter / Roboto
+
+Layout modern, smooth animation, manusiawi, friendly profesional
+
+Teknologi
+
+HTML5, CSS3 (Tailwind optional), Vanilla JS + GSAP / ScrollTrigger
+
+Lottie Web untuk semua animasi
+
+Modal interaktif untuk program
+
+Gallery lightbox interaktif
+
+Goal akhir:
+
+Website lengkap dengan 20 konten nyata
+
+Semua section interaktif dengan animasi lengkap
+
+Terlihat unik, profesional, kreatif, dan 100% manusiawi
