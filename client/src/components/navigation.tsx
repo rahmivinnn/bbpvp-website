@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useDarkMode } from '../hooks/use-dark-mode';
-import logoImage from '@assets/bbp-removebg-preview_1755309171525.png';
+import kemnakerLogo from '@assets/logo kemnaker-BBPVP_1755319196993.png';
+import vokasiLogo from '@assets/logo vokasi-02_1755319200074.png';
 
 export function Navigation() {
   const { isDark, toggleDark } = useDarkMode();
@@ -28,17 +29,23 @@ export function Navigation() {
     <nav className="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-b border-gray-200/60 dark:border-gray-700/60 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18">
-          <div className="flex items-center space-x-4">
-            <div className="w-16 h-16 rounded-xl flex items-center justify-center shadow-md">
+          <div className="flex items-center space-x-6">
+            {/* BBPVP Kemnaker Logo */}
+            <div className="flex items-center">
               <img 
-                src={logoImage} 
-                alt="BBPVP Bandung Logo" 
-                className="h-12 w-12 object-contain"
+                src={kemnakerLogo} 
+                alt="BBPVP Bandung Kemnaker Logo" 
+                className="h-12 object-contain"
               />
             </div>
-            <div>
-              <h1 className="heading-font font-bold text-xl text-gray-900 dark:text-white">BBPVP Bandung</h1>
-              <p className="text-xs text-gray-500 dark:text-gray-400 font-medium">Kemenaker RI 🇮🇩</p>
+            
+            {/* Pelatihan Vokasi Logo */}
+            <div className="flex items-center">
+              <img 
+                src={vokasiLogo} 
+                alt="Pelatihan Vokasi Logo" 
+                className="h-8 object-contain"
+              />
             </div>
           </div>
           

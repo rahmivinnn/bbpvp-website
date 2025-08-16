@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
-import logoImage from '@assets/bbp-removebg-preview_1755309171525.png';
 import backgroundImage from '@assets/bg-image.jpg';
 
 export function HeroSection() {
