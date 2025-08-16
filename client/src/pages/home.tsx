@@ -3,6 +3,7 @@ import { Navigation } from '../components/navigation';
 import { HeroSection } from '../components/hero-section';
 import { StatsSection } from '../components/stats-section';
 import { AboutSection } from '../components/about-section';
+import { CoreValuesSection } from '../components/core-values-section';
 import { ProgramsSection } from '../components/programs-section';
 import { ArticlesSection } from '../components/articles-section';
 import { GallerySection } from '../components/gallery-section';
@@ -50,6 +51,7 @@ export default function Home() {
         <HeroSection />
         <StatsSection />
         <AboutSection />
+        <CoreValuesSection />
         <ProgramsSection />
         <FacilitiesSection />
         <ServiceFlowSection />
